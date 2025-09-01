@@ -1,0 +1,265 @@
+/*----------------------------------------------
+    # Helping  style here
+----------------------------------------------*/
+//page scroll bar add
+::-webkit-scrollbar {
+  width: 10px;
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px $theme-color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $theme-color;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+//page scroll bar add
+
+//Basic Code Start
+.fix {
+  overflow: hidden;
+}
+
+.ralt {
+  position: relative;
+}
+
+//Basic Code End
+
+//Video Css Start
+.ripple {
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+    -webkit-animation: rippleOne 3s infinite;
+    animation: rippleOne 3s infinite;
+  }
+
+  &::before {
+    -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &::after {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+//Video Css End
+
+
+// Spacing
+
+// ==============
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+
+  @include breakpoint(max-md) {
+    margin-bottom: 30px;
+  }
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.ps40 {
+  padding-left: 40px;
+}
+
+
+
+// ==============
+.section-padding {
+  padding: 80px 0px;
+
+  @include breakpoint (lg) {
+    padding: 150px 0px;
+  }
+}
+
+
+// Color
+.bg-color1 {
+  background-color: $bg-color;
+}
+
+.bg-color2 {
+  background-color: $theme-color-2;
+}
+
+.section-title2 {
+  &__subtitle {
+    color: $theme-color;
+    text-align: center;
+    font-family: $body-font;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+
+    @include breakpoint(max-xxsmall) {
+      font-size: 14px;
+    }
+  }
+
+  &__title {
+    color: $title-color;
+    text-align: center;
+    font-family: $title-font;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 91.12px;
+    letter-spacing: -3.2px;
+
+    span {
+      color: $theme-color;
+    }
+
+    @include breakpoint(max-xxl) {
+      font-size: 60px;
+      line-height: 70px;
+    }
+
+    @include breakpoint(max-md) {
+      font-size: 34px;
+      line-height: 44px;
+      letter-spacing: 0.1px;
+
+      br {
+        display: none;
+      }
+    }
+
+    @include breakpoint(max-xxsmall) {
+      font-size: 24px;
+      line-height: 34px;
+      letter-spacing: 0.1px;
+    }
+  }
+
+  &.style2 {
+    .section-title2__subtitle {
+      color: $theme-color-2;
+
+      .svg {
+        filter: brightness(0%) invert(0%);
+      }
+    }
+  }
+}
+
+input:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: inherit;
+  outline: 0;
+  box-shadow: 0;
+}
+.form-control {
+  color: $white;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+
+  @include breakpoint(max-xxsmall) {
+    margin-top: 0;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eaeaea;
+    border-radius: 50%;
+    text-decoration: none;
+    border-radius: 999px;
+    background: $bg-color;
+    width: 60px;
+    height: 60px;
+    color: $title-color;
+    font-family: $title-font;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -0.64px;
+
+    @include breakpoint(max-xxsmall) {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+    }
+
+    i {
+      color: $theme-color;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+    }
+
+    &.active {
+      background: $theme-color;
+      color: $white;
+    }
+
+    &:hover {
+      background: $theme-color;
+      color: $white !important;
+
+      i {
+        color: $white !important;
+      }
+    }
+  }
+}

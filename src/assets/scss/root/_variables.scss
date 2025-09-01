@@ -1,0 +1,39 @@
+/*----------------------------------------------
+    # All Variables here
+----------------------------------------------*/
+:root {
+    
+    --body: #ffffff;
+    --black: #000;
+    --white: #fff; 
+    --theme: #E44F39;
+    --theme2: #232323; 
+    --title: #232323; 
+    --gray1: #D1D1D1;
+    --orange: #FFB124;
+    --orange1:#E8E109;
+    --text: #7B7B7B;
+    --border: #D1D1D1;
+    --border-2: #D4DCED; 
+    --bg: #EBEBEB; 
+    --box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
+    --icon-font: "Font Awesome 6 Pro";
+}
+
+// Theme Color - Defualt Colors
+$black: var(--black);
+$white: var(--white);
+$theme-color: var(--theme);
+$theme-color-2: var(--theme2);
+$title-color: var(--title); 
+$orange-color: var(--orange);
+$orange-color-1: var(--orange1);
+$gray-color-1: var(--gray1);
+$text-color: var(--text);
+$border-color: var(--border);
+$border-color-2: var(--border-2);
+$bg-color: var(--bg); 
+$shadow: var(--box-shadow);
+
+// Font Variation
+$icon-font : var(--icon-font);

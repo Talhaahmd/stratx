@@ -1,0 +1,189 @@
+/*-----------------------------------------------------------------
+Theme Name: Ezensi
+Author: Namespace-It
+Author URI: https://themeforest.net/user/namespace-it
+Developer: Masirul Islam -Skype:live:.cid.a84d5013f6e833cc
+Version: 1.0.0 
+Description: Ezensi - Creative Digital Agency Html Template  <
+ 
+-------------------------------------------------------------------
+ CSS TABLE OF CONTENTS
+-------------------------------------------------------------------
+01.Mixins
+02.Variables
+03.Typography
+04.Gutter
+05.Container
+06.Helper
+07.Preloader
+08.Animation
+09.Buttons
+10.Common
+11.Meanmenu
+12.Header
+13.Title
+14.Intro
+15.Services
+16.About
+17.Feature
+18.Achievement
+19.Work Process
+20.Projects
+21.FAQ
+22.Blog
+23.contact
+24.Partner
+25.Testimonial
+26.Team
+27.Marquee
+28.Projects
+29.Map
+30.Services
+31.Footer
+------------------------------------------------------------------*/
+
+
+//====== Root Start ======//
+
+/* 01.Mixins */
+@import "./root/mixins";
+
+/* 02.Variables */
+@import "./root/variables";
+
+/* 03.Typography */
+@import "./root/typography";
+
+/* 04.Gutter */
+@import "./root/gutter";
+
+/* 05.Container */
+@import "./root/container";
+
+//====== Root End ======//
+
+
+//====== Utilities Start ======//
+
+/* 06.Helper */
+@import "./utilities/helper";
+
+/* 07.Preloader */ 
+@import "./utilities/preloader";
+
+/* 08.Animation */
+@import "./utilities/animation";
+
+/* 09.Buttons */
+@import "./utilities/buttons";
+
+//====== Utilities End ======//
+
+//====== Components Start ======//
+
+/* 10.Common */
+@import "./components/common/checklist";
+@import "./components/common/breadcrumb";
+@import "./components/common/main-sidebar";
+@import "./components/common/slider-pagination";
+@import "./components/common/star-list";
+@import "./components/common/accordion";
+@import "./components/common/counter";
+
+/* 11.Meanmenu */
+@import "./components/meanmenu";
+
+/* 12.Header */
+@import "./components/header";
+@import "./components/header1";
+@import "./components/header2";
+@import "./components/header3";
+  
+/* 13.Title */
+@import "./components/title";
+
+/* 14.Intro */
+@import "./components/intro";
+@import "./components/intro2";
+@import "./components/intro3";
+ 
+/* 15.Services */
+@import "./components/service1";
+
+/* 16.About */
+@import "./components/about1"; 
+@import "./components/about2"; 
+@import "./components/about3"; 
+
+/* 17.Feature */
+@import "./components/feature1";
+@import "./components/feature3";
+
+/* 18.Achievement */
+@import "./components/achievement2";
+@import "./components/achievement3";
+
+/* 19.Work Process */
+@import "./components/work-process2";
+@import "./components/work-process3";
+
+/* 20.Projects */
+@import "./components/project1";
+@import "./components/project2";
+@import "./components/project3";
+
+/* 21.FAQ */
+@import "./components/faq2";
+@import "./components/faq3";
+
+/* 22.Blog */
+@import "./components/blog1";
+@import "./components/blog2";
+@import "./components/blog3";
+@import "./components/blog4";
+@import "./components/blog-details";
+
+
+/* 23.contact */
+@import "./components/contact2";
+@import "./components/contact";
+
+/* 24.Partner */
+@import "./components/patner1";
+@import "./components/partner2";
+
+/* 25.Testimonial */
+@import "./components/testimonial1";
+@import "./components/testimonial2";
+
+/* 26.Team */
+@import "./components/team1";
+@import "./components/team2";
+@import "./components/team3";
+
+/* 27.marquee */
+@import "./components/marquee2";
+@import "./components/marquee3";
+
+/* 28.Projects */
+@import "./components/project-details";
+
+/* 29.Map */
+@import "./components/map";
+
+/* 30.Service */
+@import "./components/service1";
+@import "./components/service-details";
+
+/* 31.Footer */
+@import "./components/footer";
+@import "./components/footer2";
+@import "./components/footer3";
+@import "./components/footer1";
+
+//====== Components End ======//
+
+ 
+
+
+//====== Template Section Style End ======//

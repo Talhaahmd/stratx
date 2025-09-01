@@ -1,0 +1,10 @@
+
+.star-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    i {
+    color: $orange-color;
+    }
+}

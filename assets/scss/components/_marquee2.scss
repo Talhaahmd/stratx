@@ -1,0 +1,131 @@
+.marquee2 {
+    &-scrolling {
+        overflow: hidden;
+        white-space: nowrap;
+        display: flex;
+        gap: 150px;
+        position: relative;
+        background-color: $theme-color;
+        padding: 20px 0;
+
+        &__item {
+            display: flex;
+            align-items: center;
+            animation: scroll 60s linear infinite;
+            gap: 40px;
+            cursor: pointer;
+
+            &-icon {}
+
+            &-text {
+                color: $white;
+                font-family: $title-font;
+                font-size: 80px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 91.12px;
+                letter-spacing: -3.2px;
+                @include breakpoint(max-lg) {
+                    font-size: 60px;
+                    line-height: 70px;
+                }
+                @include breakpoint(max-md) {
+                    font-size: 40px;
+                    line-height: 50px;
+                    letter-spacing: 0.1px;
+                }
+            }
+
+            &-text-2 {
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: $white;
+                font-family: $title-font;
+                font-size: 80px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 91.12px;
+                letter-spacing: -3.2px;
+                color: transparent;
+                @include breakpoint(max-lg) {
+                    font-size: 60px;
+                    line-height: 70px;
+                }
+                @include breakpoint(max-md) {
+                    font-size: 40px;
+                    line-height: 50px;
+                    letter-spacing: 0.1px;
+                }
+            }
+        }
+
+        &.style2{
+            background-color: $white;
+            transform: rotate(-6deg);
+            z-index: -1;
+            @include breakpoint(max-md) {
+                transform: rotate(0);
+                margin-top: 20px;
+            }
+            .marquee2-scrolling__item {
+                display: flex;
+                align-items: center;
+                animation: scroll 80s linear infinite;
+                gap: 40px;
+                cursor: pointer;
+    
+                &-icon {}
+    
+                &-text {
+                    color: $title-color;
+                    font-family: $title-font;
+                    font-size: 80px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 91.12px;
+                    letter-spacing: -3.2px;
+                    @include breakpoint(max-lg) {
+                        font-size: 60px;
+                        line-height: 70px;
+                    }
+                    @include breakpoint(max-md) {
+                        font-size: 40px;
+                        line-height: 50px;
+                        letter-spacing: 0.1px;
+                    }
+                }
+    
+                &-text-2 {
+                    -webkit-text-stroke-width: 2px;
+                    -webkit-text-stroke-color: $text-color;
+                    font-family: $title-font;
+                    font-size: 80px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 91.12px;
+                    letter-spacing: -3.2px;
+                    color: transparent;
+                    @include breakpoint(max-lg) {
+                        font-size: 60px;
+                        line-height: 70px;
+                    }
+                    @include breakpoint(max-md) {
+                        font-size: 40px;
+                        line-height: 50px;
+                        letter-spacing: 0.1px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

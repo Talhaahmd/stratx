@@ -1,0 +1,297 @@
+.footer3 {
+    padding-top: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-top {
+        padding-bottom: 70px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+
+        &__title {
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: $text-color;
+            color: transparent;
+            font-family: $title-font;
+            font-size: 80px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 91.12px;
+            letter-spacing: -3.2px;
+
+            @include breakpoint(max-xl) {
+                font-size: 70px;
+                line-height: 80px;
+            }
+
+            @include breakpoint(max-sm) {
+                font-size: 58px;
+                line-height: 58px;
+            }
+
+            @include breakpoint(max-xxsmall) {
+                font-size: 50px;
+                line-height: 50px;
+            }
+        }
+
+        &__input {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 24px;
+
+            @include breakpoint(max-lg) {
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            @include breakpoint(max-xxsmall) {
+                margin-bottom: 16px;
+            }
+
+            .form-control {
+                max-width: 400px;
+                height: 60px;
+                border-radius: 100px;
+                background: #2E2E2E;
+                border: none;
+                padding: 14px 30px;
+                color: $white !important;
+
+                @include breakpoint(max-xxsmall) {
+                    height: 50px;
+                }
+
+                &::placeholder {
+                    color: $white;
+                    font-family: $body-font;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 32px;
+
+                    @include breakpoint(max-xxsmall) {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 28px;
+                    }
+                }
+
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+        }
+
+        .theme-btn {
+            width: 250px;
+        }
+    }
+
+    &-widget__item {
+        padding-top: 40px;
+        position: relative;
+
+        @include breakpoint(max-lg) {
+            padding-left: 0;
+        }
+
+        &-logo {
+            padding-bottom: 30px;
+        }
+
+        &-contact {
+            padding-bottom: 20px;
+
+            &-title {
+                color: $white;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28px;
+            }
+
+            &-link {
+                color: $white;
+                font-family: $title-font;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 30px;
+                letter-spacing: -0.64px;
+
+                &:hover {
+                    color: $theme-color !important;
+                }
+            }
+        }
+
+        &-list {
+            li {
+                padding-bottom: 13px;
+
+                a {
+                    color: $white;
+                    font-family: $body-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 28px;
+
+                    span {
+                        padding-right: 10px;
+                    }
+
+                    &:hover {
+                        color: $theme-color !important;
+                    }
+                }
+            }
+        }
+
+        &-single {
+
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+
+            &-thumb {
+                border-radius: 8px;
+
+                img {
+                    border-radius: 8px;
+                }
+            }
+
+            &-date {
+                color: $white;
+                font-family: $body-font;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 32px;
+                padding-bottom: 4px;
+
+                i {
+                    font-size: 12px;
+                    padding-left: 4px;
+                }
+
+                @include breakpoint(max-xxsmall) {
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            }
+
+            &-text {
+                color: $white;
+                font-family: $title-font;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 30px;
+                letter-spacing: -0.64px;
+                &:hover{
+                    color: $theme-color !important;
+                }
+
+                @include breakpoint(max-xxsmall) {
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+            }
+
+            &.style3 {
+                padding-bottom: 40px;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    left: 0;
+                    bottom: 20px;
+                    height: 1px;
+                    width: 350px;
+                    content: "";
+                    background: rgba(255, 255, 255, 0.4);
+                }
+            }
+        }
+
+    }
+
+
+
+
+    &-bottom {
+        border-top: 1px solid $border-color;
+        margin-top: 60px;
+
+
+        &-item {
+            padding: 30px 0;
+
+            @include breakpoint(max-lg) {
+                flex-wrap: wrap;
+                justify-content: center !important;
+                text-align: center;
+            }
+
+            &__text {
+                color: $white;
+                font-family: $body-font;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 32px;
+
+                @include breakpoint(max-xl) {
+                    font-size: 16px;
+                }
+
+                a {
+                    color: $white;
+                    font-family: $body-font;
+                    font-size: 20px;
+
+                    &:hover {
+                        color: $theme-color !important;
+                    }
+                }
+            }
+
+            &__list {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                gap: 30px;
+
+                @include breakpoint(max-xxsmall) {
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    justify-content: center;
+                }
+
+                li {
+                    a {
+                        color: $white;
+                        font-family: $body-font;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 32px;
+
+                        @include breakpoint(max-xl) {
+                            font-size: 16px;
+                        }
+                        &:hover{
+                            color: $theme-color !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,124 @@
+.testimonial2 {
+    &-slider {
+        width: 410px;
+        border-radius: 20px;
+        margin-left: auto;
+        @include breakpoint(max-lg) {
+           margin: 0 auto;
+         }
+        @include breakpoint(max-xs) {
+           width: 300px;
+         }
+
+        .swiper-slide:nth-child(1n) {
+            border-radius: 20px;
+        }
+
+        .swiper-slide:nth-child(2n) {
+            border-radius: 20px;
+        }
+
+        .swiper-slide:nth-child(3n) {
+            border-radius: 20px;
+        }
+
+        .swiper-slide:nth-child(4n) {
+            border-radius: 20px;
+        }
+
+        &__item {
+            padding: 18px;
+            border-radius: 20px;
+            background-color: $title-color;
+            @include breakpoint(max-xs) {
+                padding: 0;
+             }
+
+            &-content {
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                border-radius: 20px;
+                padding: 18px;
+
+                &-title {
+                    color: $white;
+                    font-family: $title-font;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 40px;
+                    letter-spacing: -0.64px;
+                    padding-bottom: 6px;
+                    @include breakpoint(max-xs) {
+                        font-size: 28px;
+                        line-height: 36px;
+                     }
+                }
+
+                &-subtitle {
+                    color: $white;
+                    font-family: $body-font;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 30px;
+
+                    span {
+                        display: block;
+                    }
+                }
+
+                &-text {
+                    color: $white;
+                    font-family: $body-font;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 32px;
+                    @include breakpoint(max-xs) {
+                        font-size: 16px;
+                        line-height: 28px;
+                     }
+                }
+            }
+
+        }
+
+        &-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 20px;
+
+            &__thumb {}
+
+            &__ratings {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                gap: 4px;
+
+                li {
+
+                    a {
+                        color: #FFB124;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .swiper-arrow{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 26px;
+        .swiper-nav:hover svg circle{
+            stroke: $theme-color;
+        }
+
+        @include breakpoint(max-lg) {
+            margin-bottom: 30px;
+         }
+    }
+}

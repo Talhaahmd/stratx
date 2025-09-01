@@ -1,0 +1,74 @@
+.about2 {
+    &-card {
+        &-left {
+            &__item {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                margin-bottom: 30px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                @include breakpoint(max-xxsmall) {
+                   flex-wrap: wrap;
+                   gap: 20px;
+                  }
+
+                &-thumb {
+                    height: 80px;
+                    width: 80px;
+                    border-radius: 50%;
+                    border: 1px solid $border-color;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        max-width: 100%;
+                    }
+                }
+
+                &-content {
+                    width: 77%;
+                    @include breakpoint(max-xxsmall) {
+                        width: 100%;
+                      }
+
+                    &-title {
+                        color: $title-color;
+                        font-family: $title-font;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 30px;
+                        letter-spacing: -0.64px;
+                    }
+
+                    &-desc {
+                        color: $text-color;
+                        font-family: $body-font;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 28px;
+                        padding-top: 4px;
+                    }
+                }
+            }
+        }
+
+        &__thumb {
+            img {
+                max-width: 100%;
+            }
+            @include breakpoint(max-xl) {
+                margin-top: 40px;
+              }
+        }
+        p{
+            @include breakpoint(max-sm) {
+                font-size: 16px;
+            }   
+        }
+    }
+}

@@ -1,0 +1,164 @@
+.faq2 {
+    &-main-content {
+        .accordion {
+            .global-accordion-item {
+                .global-accordion {
+                    &-header {
+                        margin: 0;
+                        -webkit-transition: all 0.3s ease;
+                        -o-transition: all 0.3s ease;
+                        transition: all 0.3s ease;
+                    }
+
+                    &-button {
+                        color: $title-color;
+                        font-family: $title-font;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 30px;
+                        letter-spacing: -0.64px;
+                        padding: 16px 0px 10px 0px;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        position: relative;
+                        border-top: 1px solid $theme-color;
+
+                        @include breakpoint(max-xxl) {
+                            font-size: 20px;
+                        }
+                        @include breakpoint(max-sm) {
+                            font-size: 16px;
+                            padding-top: 8px;
+                        }
+
+                        .number {
+                            margin-right: 18px;
+
+                            @include breakpoint(max-xxl) {
+                                margin-right: 8px;
+                            }
+                        }
+
+                        .icon {
+                            z-index: 11;
+
+                            i {
+                                width: 40px;
+                                height: 40px;
+                                text-align: center;
+                                line-height: 40px;
+                                border-radius: 50%;
+                                color: $title-color;
+                                border: 1px solid $theme-color;
+                                font-size: 16px;
+                                display: inline-block;
+                                @include breakpoint(max-sm) {
+                                    width: 30px;
+                                    height: 30px;
+                                    line-height: 30px;
+                                }
+                            }
+                        }
+
+                        &.collapsed {
+                            border-top: 1px solid $border-color;
+                            padding-bottom: 26px;
+
+                            .icon {
+                                transform: rotate(-90deg);
+
+                                i {
+                                    border: 1px solid $border-color;
+                                    color: $title-color;
+                                }
+                            }
+                        }
+                    }
+
+                    &-body {
+                        padding: 0 0px 24px 0px;
+                        border-top: 0;
+                        color: $text-color;
+                        font-family: $body-font;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 28px;
+
+                        p {
+                            font-size: 16px;
+                            @include breakpoint(max-sm) {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-right-content {
+        background-color: $white;
+        border-radius: 20px;
+        margin-left: 60px;
+        text-align: center;
+        padding: 40px 30px 50px 30px;
+
+        @include breakpoint(max-xl) {
+            margin-left: 20px;
+        }
+        @include breakpoint(max-lg) {
+            margin-left: 0px;
+            margin-top: 30px;
+        }
+        @include breakpoint(max-xs) {
+            padding: 30px 15px;
+        }
+
+        &__thumb {
+            background-color: $theme-color;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        &__title {
+            color: $title-color;
+            font-size: 36px;
+            font-family: $title-font;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 41.76px;
+            letter-spacing: -0.72px;
+            padding: 20px 0 10px 0;
+            @include breakpoint(max-md) {
+                font-size: 32px;
+                line-height: 40px;
+             }
+            @include breakpoint(max-xs) {
+                font-size: 24px;
+                line-height: 30px;
+             }
+        }
+
+        &__text {
+            color: $text-color;
+            font-family: $body-font;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px;
+            padding: 0 5px 26px 5px;
+            @include breakpoint(max-xs) {
+               font-size: 16px;
+               padding: 0 0 20px 0;
+             }
+        }
+    }
+}

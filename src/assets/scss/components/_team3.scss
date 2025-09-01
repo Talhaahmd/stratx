@@ -1,0 +1,95 @@
+.team3 {
+    background-color: $white;
+    &-item {
+        border-top: 1px solid $border-color;
+        padding: 4px 0;
+        transition: 0.4s all ease-in-out;
+        &:hover{
+            border-top: 1px solid $theme-color;  
+        }
+
+        &__left {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            @include breakpoint(max-lg) {
+                flex-wrap: wrap;
+            }
+
+            &-name {
+                color: $title-color;
+                font-family: $title-font;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 41.76px;
+                letter-spacing: -0.72px;
+                @include breakpoint(max-xxsmall) {
+                    font-size: 30px;
+                 }
+            }
+
+            &-title {
+                max-width: 100px;
+                margin: 0 auto;
+                color: $text-color;
+                font-family: $body-font;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 32px;
+                @include breakpoint(max-lg) {
+                    max-width: 100%;
+                }
+                @include breakpoint(max-sm) {
+                    margin: 0;
+                 }
+            }
+        }
+
+        &__right {
+            display: flex;
+            align-items: center;
+            @include breakpoint(max-sm) {
+               flex-wrap: wrap;
+            }
+            &-text {
+                color: $text-color;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px
+            }
+
+            &-item {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.4s all ease-in-out;
+                transform: translateX(40px);
+                @include breakpoint(max-sm) {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateX(0);
+                 }
+                 
+                a{
+                    transform: translateX(-10px);
+                    &:hover{
+                        transform: translateX(0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.team3-item:hover .team3-item__right-item{
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}

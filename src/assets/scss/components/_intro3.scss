@@ -1,0 +1,110 @@
+.intro3 {
+    position: relative;
+
+    &-content {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 250px 0;
+        text-align: center;
+        @include breakpoint(max-md) {
+            padding: 200px 0 150px 0;
+         }
+
+        &__title {
+            max-width: 1213px;
+            color: $white;
+            font-family: $title-font;
+            font-size: 110px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 99.8px;
+            letter-spacing: -3.2px;
+            text-transform: uppercase;
+            margin: 0 auto;
+            padding-bottom: 36px;
+            @include breakpoint(max-xl) {
+               font-size: 94px;
+            }
+            @include breakpoint(max-lg) {
+               font-size: 74px;
+               line-height: 84px;
+            }
+            @include breakpoint(max-md) {
+               font-size: 52px;
+               line-height: 64px;
+            }
+            @include breakpoint(max-xs) {
+               font-size: 36px;
+               line-height: 44px;
+               font-weight: 500;
+               letter-spacing: 0.29px;
+            }
+            @include breakpoint(max-xxsmall) {
+                font-size: 30px;
+             }
+
+            span {
+                font-weight: 300;
+            }
+        }
+
+        &__btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            @include breakpoint(max-xs) {
+                flex-wrap: wrap;
+                gap: 16px;
+             }
+        }
+    }
+
+    .swiper-arrow {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 300px;
+        bottom: 126px;
+        z-index: 9;
+        gap: 60px;
+        @include breakpoint(max-md) {
+            display: none;
+         }
+        .swiper-nav {
+            transition: 0.4s all ease-in-out;
+
+            &:hover svg{
+                fill: $theme-color !important;
+                stroke: $theme-color !important;
+                stop-color: $theme-color !important;
+            }
+        }
+    }
+
+    &__shape3_1 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 9;
+        @include breakpoint(max-xxl) {
+            max-width: 400px;
+        }
+        img{
+            @include breakpoint(max-xxl) {
+                width: 100%;
+            }   
+            @include breakpoint(max-md) {
+                display: none;
+            }   
+        }
+    }
+
+    &__shape3_2 {
+        position: absolute;
+        top: 140px;
+        left: 160px;
+        z-index: 9;
+    }
+}

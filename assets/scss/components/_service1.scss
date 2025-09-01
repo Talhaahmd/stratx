@@ -1,0 +1,59 @@
+.service1-card {
+    padding: 40px;
+    border-radius: 0px 20px 0px 0px;
+    border-top: 1px solid $gray-color-1;
+    border-right: 1px solid $gray-color-1;
+    @include breakpoint(max-xxsmall) {
+        padding: 30px 16px;
+        }
+    &__title {
+        position: relative;
+        color: $title-color;
+        font-family: $title-font;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 41.76px;
+        letter-spacing: -0.72px;
+        margin-left: 90px;
+        margin-bottom: 20px;
+
+        @include breakpoint(max-xxl) {
+            font-size: 28px;
+            line-height: 36px;
+        }
+
+        @include breakpoint(max-xxsmall) {
+            margin-left: 0;
+        }
+
+        &:before {
+            position: absolute;
+            content: '';
+            top: 20px;
+            left: -90px;
+            width: 70px;
+            height: 2px;
+            background-color: $title-color;
+
+            @include breakpoint(max-xxsmall) {
+                display: none;
+            }
+        }
+    }
+
+    &__desc {
+        color: $text-color;
+        font-family: $body-font;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        margin-bottom: 35px;
+
+        @include breakpoint(max-xxsmall) {
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+}

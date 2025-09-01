@@ -1,0 +1,157 @@
+.patner1 {
+  &-client {
+    position: relative;
+    left: 23%;
+    top: -120px;
+    padding: 30px 0px 30px 40px;
+    width: 502px;
+    height: 119px;
+    border-radius: 20px;
+    display: inline-block;
+    border: 1px solid $theme-color;
+    background: $white;
+
+    @include breakpoint(max-xxl) {
+      width: 420px;
+      left: 26%;
+    }
+
+    @include breakpoint(max-xl) {
+      left: 0;
+    }
+
+    @include breakpoint(max-xxsmall) {
+      padding-top: 14px;
+      width: 300px;
+  }
+  
+
+    &__thumb1 {
+      position: absolute;
+      left: 10px;
+    }
+
+    &__thumb2 {
+      position: absolute;
+      left: 60px;
+    }
+
+    &__thumb3 {
+      position: absolute;
+      left: 110px;
+    }
+
+    &-counter {
+      position: absolute;
+      left: 160px;
+
+      &__text {
+        color: $title-color;
+        font-family: $body-font;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        justify-content: center;
+        display: inline-block;
+        border: 1px solid $theme-color;
+        border-radius: 36px;
+        background-color: $white;
+      }
+    }
+
+    &__subtext {
+      position: absolute;
+      left: 53%;
+      top: 50px;
+      color: $title-color;
+      font-family: $body-font;
+      font-size: 20px;
+      text-align: center;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 32px;
+      
+      @include breakpoint(max-xxsmall) {
+        position: initial;
+        margin-top: 60px;
+        text-align: left;
+    }
+    }
+  }
+
+
+  .patner1-items {
+    &__thumb1 {
+      img {
+        max-width: 100%;
+      }
+    }
+
+    &-content {
+      padding: 30px 29px 27px 30px;
+      max-width: 520px;
+      height: 285px;
+      border-radius: 20px;
+      margin-top: 37px;
+      
+      @include breakpoint(max-xxsmall) {
+        height: 220px;
+        padding: 20px 10px;
+    }
+
+      @include breakpoint(max-xl) {
+        background-color: $theme-color;
+        margin-bottom: 30px;
+      }
+
+      &__title {
+        color: $white;
+        font-family: $title-font;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 41.76px;
+        letter-spacing: -0.72px;
+        margin-bottom: 15px;
+
+        @include breakpoint(max-xxsmall) {
+          font-size: 30px;
+          line-height: 28px;
+        }
+      }
+
+      &__text {
+        color: $white;
+        font-family: $body-font;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        margin-bottom: 56px;
+
+        @include breakpoint(max-xxsmall) {
+          font-size: 16px;
+          line-height: 28px;
+          margin-bottom: 30px;
+        }
+      }
+      a{
+        &:hover{
+          color: $white !important;
+        }
+      }
+
+    }
+  }
+
+  &__thumb2 {
+    img {
+      max-width: 100%;
+    }
+  }
+}

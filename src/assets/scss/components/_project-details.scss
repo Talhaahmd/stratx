@@ -1,0 +1,348 @@
+.project {
+  &-details {
+    &-wrapper {
+      &-header {
+        display: flex;
+        gap: 80px;
+
+        @include breakpoint(max-xl) {
+          flex-wrap: wrap;
+          gap: 30px;
+        }
+
+        &__title {
+          color: $title-color;
+          font-family: $title-font;
+          font-size: 80px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 91.12px;
+          letter-spacing: -3.2px;
+          width: 672px;
+
+          @include breakpoint(max-lg) {
+            font-size: 60px;
+            line-height: 70px;
+          }
+
+          @include breakpoint(max-xs) {
+            font-size: 42px;
+            line-height: 52px;
+            letter-spacing: 0;
+          }
+          @include breakpoint(max-xxsmall) {
+            font-size: 30px;
+            line-height: 40px;
+            letter-spacing: 0;
+          }
+        }
+
+        &-left {
+          display: flex;
+          gap: 100px;
+          @include breakpoint(max-xs) {
+           gap: 24px;
+            }
+          &-items {
+            &__content {
+              margin-bottom: 50px;
+
+              &-title {
+                color: $title-color;
+                font-family: $title-font;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 40px;
+                letter-spacing: -0.64px;
+                margin-bottom: 6px;
+                @include breakpoint(max-xs) {
+                  font-size: 24px;
+                  line-height: 28px;
+                  }
+              }
+
+              &-text {
+                color: $text-color;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px;
+              }
+            }
+          }
+        }
+      }
+
+      &-info {
+        &__thumb {
+          margin-bottom: 29px;
+
+          img {
+            max-width: 100%;
+          }
+        }
+
+        &__content {
+          &-text {
+            color: $text-color;
+            font-family: $body-font;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px;
+            margin-bottom: 27px;
+
+            @include breakpoint(max-xxsmall) {
+              font-size: 16px;
+              line-height: 28px;
+            }
+          }
+
+          &-subtext {
+            color: $text-color;
+            font-family: $body-font;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px;
+            margin-bottom: 58px;
+
+            @include breakpoint(max-md) {
+              font-size: 16px;
+              line-height: 28px;
+            }
+          }
+        }
+
+        &__thumb1 {
+          display: flex;
+          gap: 30px;
+          margin-bottom: 23px;
+
+          @include breakpoint(max-xxl) {
+            flex-wrap: wrap;
+          }
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      &-footer {
+        &__title {
+          color: $title-color;
+          font-family: $title-font;
+          font-size: 80px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 91.12px;
+          letter-spacing: -3.2px;
+          margin-bottom: 18px;
+
+          @include breakpoint(max-xxl) {
+            font-size: 60px;
+            line-height: 80px;
+          }
+
+          @include breakpoint(max-lg) {
+            font-size: 40px;
+            line-height: 50px;
+            letter-spacing: 0;
+          }
+
+          @include breakpoint(max-xxsmall) {
+            font-size: 30px;
+            line-height: 40px;
+            letter-spacing: 0;
+          }
+        }
+
+        &__text {
+          color: $text-color;
+          font-family: $body-font;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 32px;
+          margin-bottom: 24px;
+
+          @include breakpoint(max-xxsmall) {
+            font-size: 16px;
+            line-height: 28px;
+          }
+        }
+
+        &-area {
+          display: flex;
+          gap: 60px;
+          margin-bottom: 20px;
+
+          @include breakpoint(max-xl) {
+            flex-wrap: wrap;
+            gap: 20px;
+          }
+
+          &__items1 {
+            &-sublist {
+              li {
+                color: $text-color;
+                font-family: $body-font;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 32px;
+
+                @include breakpoint(max-xxsmall) {
+                  font-size: 16px;
+                  line-height: 28px;
+                }
+
+                i {
+                  color: $theme-color;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 900;
+                  line-height: normal;
+                }
+              }
+            }
+          }
+        }
+
+        &-desc {
+          &__title {
+            color: $title-color;
+            font-family: $title-font;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 40px;
+            letter-spacing: -0.64px;
+            margin-bottom: 16px;
+
+            @include breakpoint(max-xxsmall) {
+              font-size: 24px;
+              line-height: 28px;
+            }
+          }
+
+          &__text {
+            color: $text-color;
+            font-family: $body-font;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px;
+            margin-bottom: 16px;
+
+            @include breakpoint(max-md) {
+              font-size: 16px;
+              line-height: 28px;
+            }
+          }
+
+          &__subtext {
+            color: $text-color;
+            font-family: $body-font;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px;
+            margin-bottom: 58px;
+
+            @include breakpoint(max-md) {
+              font-size: 16px;
+              line-height: 28px;
+            }
+
+          }
+        }
+
+        &-button {
+          display: flex;
+          gap: 10px;
+          justify-content: space-between;
+          max-width: 1290px;
+          height: 80px;
+          border-radius: 999px;
+          border: 1px solid $border-color;
+          background: $white;
+
+          &__arry-prev {
+            margin-left: 65px;
+
+            i {
+              color: $title-color;
+              font-size: 36px;
+              font-style: normal;
+              font-weight: 900;
+              line-height: normal;
+            }
+
+            span {
+              color: $title-color;
+              font-family: $title-font;
+              font-size: 32px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 40px;
+              letter-spacing: -0.64px;
+              margin-left: 17px;
+
+              @include breakpoint(max-md) {
+                font-size: 24px;
+                line-height: 28px;
+                margin-left: 10px;
+              }
+
+              @include breakpoint(max-xxsmall) {
+                display: none;
+              }
+            }
+          }
+
+          &__arry-next {
+            margin-right: 65px;
+
+            i {
+              color: $title-color;
+              font-size: 36px;
+              font-style: normal;
+              font-weight: 900;
+              line-height: normal;
+            }
+
+            span {
+              color: $title-color;
+              font-family: $title-font;
+              font-size: 32px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 40px;
+              letter-spacing: -0.64px;
+              margin-right: 17px;
+
+              @include breakpoint(max-md) {
+                font-size: 24px;
+                line-height: 28px;
+                margin-right: 10px;
+              }
+
+              @include breakpoint(max-xxsmall) {
+                display: none;
+              }
+            }
+          }
+        }
+
+
+      }
+
+
+    }
+  }
+
+}

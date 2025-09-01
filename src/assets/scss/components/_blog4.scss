@@ -1,0 +1,148 @@
+.blog-page-wrapper {
+  &-items {
+    &__thumb {
+      position: relative;
+
+      img {
+        max-width: 100%;
+      }
+
+      &-post-date {
+        position: absolute;
+        bottom: 27px;
+        left: 26px;
+        display: inline-flex;
+        padding: 8px 28px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 999px;
+        background-color: $white !important;
+
+        @include breakpoint (max-sm) {
+          bottom: 27px;
+          left: 12px;
+          padding: 8px 12px;
+          gap: 8px;
+        }
+
+        @include breakpoint (max-xxs) {
+          bottom: 27px;
+          left: 12px;
+          padding: 8px 12px;
+          gap: 8px;
+        }
+
+        @include breakpoint (max-xxsmall) {
+          background-color: transparent;
+          position: initial;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 4px;
+        }
+
+        ul {
+          @include flex;
+          gap: 16px;
+          @include breakpoint(max-xxsmall) {
+            flex-wrap: wrap;
+            justify-content: left;
+            }
+
+          @include breakpoint (max-xl) {
+            gap: 16px;
+          }
+
+          li {
+            color: $text-color;
+            font-family: $body-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px;
+
+            @include breakpoint (max-sm) {
+              font-size: 14px;
+            }
+
+            @include breakpoint (max-xxs) {
+              font-size: 12px;
+
+            }
+
+            i {
+              color: $theme-color;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              margin-right: 10px;
+
+              @include breakpoint (max-sm) {
+                font-size: 10px;
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+    &__content {
+      padding: 15px 0px 75px 0px;
+
+      &-title {
+        margin-bottom: 13px;
+
+        a {
+          color: $title-color;
+          font-family: $title-font;
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 41.76px;
+          letter-spacing: -0.72px;
+
+          @include breakpoint (max-lg) {
+            font-size: 31px;
+          }
+          @include breakpoint (max-xxsmall) {
+            font-size: 24px;
+            line-height: 36px;
+          }
+
+          &:hover {
+            color: $theme-color;
+          }
+        }
+      }
+
+      &-subtitle {
+        color: $text-color;
+        font-family: $body-font;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        margin-bottom: 40px;
+        @include breakpoint(max-xxsmall) {
+          font-size: 16px;
+          line-height: 28px;
+          }
+      }
+
+      &-button {
+        .theme-btn {
+          &.style3 {
+            border: 1px solid $border-color;
+            color: $title-color;
+          }
+
+          svg {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}

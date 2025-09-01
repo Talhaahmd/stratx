@@ -1,0 +1,85 @@
+.achievement2 {
+    &-title {
+        color: $title-color;
+        font-family: $title-font;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 91.12px;
+        letter-spacing: -3.2px;
+        text-align: center;
+        padding-bottom: 60px;
+        @include breakpoint(max-xl) {
+            font-size: 60px;
+            line-height: 70px;
+          }
+
+          @include breakpoint(max-md) {
+            font-size: 40px;
+            line-height: 50px;
+          }
+          @include breakpoint(max-xxsmall) {
+            font-size: 36px;
+            line-height: 40px;
+            padding-bottom: 40px;
+          }
+
+        &__img-1 {
+            @include breakpoint(max-xs) {
+                display: none;
+              }
+        }
+
+        &__img-2 {
+            .avatar {
+                margin-left: -30px;
+
+                &:first-child {
+                    margin-left: 0px;
+                }
+            }
+            @include breakpoint(max-xs) {
+                display: none;
+              }
+        }
+    }
+
+    &-card {
+        padding: 20px;
+        border-radius: 20px;
+        background-color: $white;
+        @include breakpoint(max-xl) {
+            margin-bottom: 24px;
+          }
+
+        &__counter {
+            text-align: center;
+            font-family: $title-font;
+            font-size: 80px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 91.12px;
+            letter-spacing: -3.2px;
+            margin-bottom: 10px;
+            -webkit-text-stroke: 2px $text-color;
+            -webkit-text-fill-color: transparent;
+            @include breakpoint(max-xs) {
+              font-size: 50px;
+              line-height: 70px;
+              padding-bottom: 4;
+          }
+        }
+
+        &__plus {}
+
+        &__desc {
+            color: $text-color;
+            text-align: center;
+            font-family: $body-font;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px;
+        }
+    }
+}

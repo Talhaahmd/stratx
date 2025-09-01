@@ -1,0 +1,100 @@
+
+.about1 {
+    &-title-thumb {
+        border-radius: 20px;
+        img{
+            border-radius: 20px;
+            width: 100%;
+        }
+    }
+
+    &-details {
+        display: flex;
+        align-items: center;
+        gap: 78px;
+        @include breakpoint(max-xxxl) {
+           flex-wrap: wrap;
+           gap: 16px;
+        }
+        &__left {
+            display: flex;
+            align-items: center;
+            gap: 68px;
+            @include breakpoint(max-sm) {
+                gap: 16px;
+                flex-wrap: wrap;
+            }
+        }
+
+        &__thumb{
+            img{
+                border-radius: 20px;
+            }
+        }
+
+        &__desc {
+            color: $text-color; 
+            font-family: $body-font;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px; 
+
+            @include breakpoint(max-xxsmall) {
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+    }
+
+    &-achievement {
+        margin-top: 170px;
+        @include breakpoint(max-lg) {
+            margin-top: 50px;
+        }
+        &__thumb {
+            border-radius: 999px;
+            @include breakpoint(max-xxxl) {
+                margin-bottom: 24px;
+            }
+            img {
+                border-radius: 999px;
+                width: 100%;
+            }
+        }
+
+        &__card {
+            border-radius: 999px;
+            background-color: $white;
+            padding: 20px;
+            @include breakpoint(max-md) {
+                margin-bottom: 24px;
+            }
+        }
+
+        &__counter {
+            color: $title-color;
+            text-align: center; 
+            font-family: $title-font;
+            font-size: 80px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 91.12px;  
+            letter-spacing: -3.2px;
+            @include breakpoint(max-xxsmall) {
+                font-size: 48px;
+                line-height: 57px;
+            }
+        }
+
+        &__desc {
+            color: $text-color;
+            text-align: center; 
+            font-family: $body-font;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px; 
+        }
+    }
+}

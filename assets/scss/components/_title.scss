@@ -1,0 +1,32 @@
+/*----------------------------------------------
+    # Title style here
+----------------------------------------------*/
+ .section-title {
+    &.style1 {
+        text-align: center;
+        .subtitle {
+            color: $title-color;
+            text-align: center; 
+            font-family: $title-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;  
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+        }
+        .title {
+            color: $title-color;
+            text-align: center; 
+            font-family: $title-font;
+            font-size: 80px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 91.12px;  
+            letter-spacing: -3.2px;
+            .color-text {
+                color: #E44F39;
+            }
+        }
+    }
+ }

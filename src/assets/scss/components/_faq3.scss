@@ -1,0 +1,33 @@
+ .faq3 {
+    &-thumb {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+        &__one {
+        
+            margin-top: 101px;
+            img {
+                border-radius: 20px;
+                width: 100%;
+            }
+        }
+
+        &__two {
+            img {
+                border-radius: 20px;
+                width: 100%;
+            }
+        }
+
+        .counter-box3 {
+            position: absolute;
+            bottom: 20px;
+            left: 35%; 
+            @include breakpoint(max-xxsmall) {
+                left: auto;
+                right: 0;
+              }
+        }
+    }
+ }

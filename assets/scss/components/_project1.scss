@@ -1,0 +1,98 @@
+.project1 {
+
+    &__content {
+        &-text {
+            color: $text-color;
+            font-family: $body-font;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px;
+        }
+    }
+
+    &-wrapper {
+        &__thumb {
+            position: relative;
+
+            img {
+                max-width: 100%;
+                border-radius: 20px;
+            }
+
+            &-icon {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                transition: 0.4s all ease-in-out;
+            }
+
+            &:hover &-icon{
+                opacity: 1;
+            }
+        }
+
+        &-info {
+            &-items1 {
+                &__thumb {
+                    position: relative;
+
+                    img {
+                        max-width: 100%;
+                        border-radius: 20px;
+                    }
+
+                    &-icon {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        opacity: 0;
+                        transition: 0.4s all ease-in-out;
+                    }
+
+                    &:hover &-icon{
+                        opacity: 1;
+                    }
+
+                }
+
+                
+            }
+
+            &-items2 {
+                &__thumb {
+                    position: relative;
+                    img {
+                        max-width: 100%;
+                        border-radius: 20px;
+                    }
+                    &-icon {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        opacity: 0;
+                        transition: 0.4s all ease-in-out;
+                    }
+                    &:hover &-icon{
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &__btn-button {
+                margin-top: 60px;
+            }
+        }
+
+        &__btn-button {
+            margin-top: 50px;
+            .svg{
+                transition: 0.4s all ease-in-out;
+            }
+        }
+    }
+}

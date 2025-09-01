@@ -1,0 +1,383 @@
+.service {
+  &-details {
+    &__content {
+      display: flex;
+      gap: 10px;
+      align-items: end;
+      margin-bottom: 29px;
+
+      @include breakpoint(max-xl) {
+        flex-wrap: wrap;
+      }
+
+      &-title {
+        color: $title-color;
+        font-family: $title-font;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 91.12px;
+        letter-spacing: -3.2px;
+
+        @include breakpoint(max-xl) {
+          font-size: 50px;
+          line-height: 60px;
+          letter-spacing: 0;
+        }
+
+        @include breakpoint(max-xxsmall) {
+          font-size: 30px;
+          line-height: 36px;
+        }
+      }
+
+      &-text {
+        max-width: 535px;
+        color: $text-color;
+        font-family: $body-font;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+
+        @include breakpoint(max-xxsmall) {
+          font-size: 16px;
+          line-height: 28px;
+        }
+      }
+    }
+
+    &-items {
+      @include flex;
+      gap: 51px;
+      margin-bottom: 60px;
+
+      @include breakpoint(max-xl) {
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-bottom: 40px;
+      }
+
+      &__title {
+        color: $title-color;
+        font-family: $title-font;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 41.76px;
+        letter-spacing: -0.72px;
+
+        @include breakpoint(max-xxsmall) {
+          font-size: 28px;
+          line-height: 36px;
+        }
+      }
+
+      &__list {
+        @include flex;
+        gap: 50px;
+
+        @include breakpoint(max-xxl) {
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+
+        li {
+          a {
+            color: $text-color;
+            font-family: $body-font;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px;
+
+            @include breakpoint(max-xxsmall) {
+              font-size: 16px;
+              line-height: 28px;
+            }
+          }
+
+          span {
+            color: $text-color;
+            font-family: $body-font;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px;
+            margin-left: 36px;
+            @include breakpoint(max-xxsmall) {
+              font-size: 16px;
+              line-height: 28px;
+              }
+          }
+        }
+      }
+    }
+
+    &-info {
+      &__thumb {
+        margin-bottom: 29px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      &__contact {
+        &-text {
+          color: $text-color;
+          font-family: $body-font;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 32px;
+          margin-bottom: 23px;
+
+          @include breakpoint(max-xxsmall) {
+            font-size: 16px;
+            line-height: 28px;
+          }
+        }
+
+        &-subtext {
+          color: $text-color;
+          font-family: $body-font;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 32px;
+
+          @include breakpoint(max-xxsmall) {
+            font-size: 16px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+
+    &-cards {
+      display: flex;
+      gap: 0;
+      padding: 40px;
+      border-radius: 0px 20px 0px 0px;
+
+      @include breakpoint(max-xxl) {
+        flex-wrap: wrap;
+      }
+
+      @include breakpoint(max-xxsmall) {
+        padding: 20px 0;
+      }
+
+      &__title {
+        position: relative;
+        color: $title-color;
+        font-family: $title-font;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 41.76px;
+        letter-spacing: -0.72px;
+        margin-left: 90px;
+        margin-bottom: 20px;
+
+        @include breakpoint(max-xxsmall) {
+         font-size: 28px;
+         line-height: 38px;
+         margin-left: 0;
+        }
+
+
+
+        &:before {
+          position: absolute;
+          content: '';
+          top: 20px;
+          left: -90px;
+          width: 70px;
+          height: 2px;
+          background-color: $title-color;
+
+          @include breakpoint(max-xxsmall) {
+            display: none !important;
+          }
+        }
+      }
+
+      &__desc {
+        color: $text-color;
+        font-family: $body-font;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        margin-bottom: 35px;
+        @include breakpoint(max-xxsmall) {
+          font-size: 16px;
+          line-height: 28px;
+          }
+      }
+
+    }
+
+    &-area {
+      &__title {
+        color: $title-color;
+        font-family: $title-font;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 41.76px;
+        letter-spacing: -0.72px;
+        margin-bottom: 20px;
+        @include breakpoint(max-xxsmall) {
+          font-size: 28px;
+          line-height: 36px;
+          }
+      }
+
+      &__text {
+        color: $text-color;
+        font-family: $body-font;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        margin-bottom: 25px;
+        @include breakpoint(max-xxsmall) {
+          font-size: 16px;
+          line-height: 28px;
+          }
+      }
+
+      &-list1 {
+        display: flex;
+        gap: 60px;
+        margin-bottom: 11px;
+
+        @include breakpoint(max-xxl) {
+          flex-wrap: wrap;
+          gap: 24px;
+        }
+
+        &__items1 {
+          &-sublist {
+            li {
+              color: $text-color;
+              font-family: $title-font;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 32px;
+              margin-bottom: 11px;
+
+              @include breakpoint(max-xxsmall) {
+                font-size: 16px;
+                line-height: 28px;
+                }
+
+              i {
+                color: $theme-color;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+                margin-right: 8px;
+              }
+            }
+          }
+        }
+      }
+
+      &__subtext {
+        color: $text-color;
+        font-family: $body-font;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        margin-bottom: 50px;
+        @include breakpoint(max-xxsmall) {
+          font-size: 16px;
+          line-height: 28px;
+          }
+      }
+
+      &-button {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        max-width: 1290px;
+        height: 80px;
+        border-radius: 999px;
+        border: 1px solid $border-color;
+        background: $white;
+
+        &__arry-prev {
+          margin-left: 65px;
+
+          i {
+            color: $title-color;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+          }
+
+          span {
+            color: $title-color;
+            font-family: $title-font;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 40px;
+            letter-spacing: -0.64px;
+            margin-left: 17px;
+
+            @include breakpoint(max-md) {
+              font-size: 28px;
+              line-height: 36px;
+            }
+
+            @include breakpoint(max-xs) {
+              display: none;
+            }
+          }
+        }
+
+        &__arry-next {
+          margin-right: 65px;
+
+          i {
+            color: $title-color;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+
+          }
+
+          span {
+            color: $title-color;
+            font-family: $title-font;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 40px;
+            letter-spacing: -0.64px;
+            margin-right: 17px;
+
+            @include breakpoint(max-md) {
+              font-size: 28px;
+              line-height: 36px;
+            }
+
+            @include breakpoint(max-xs) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

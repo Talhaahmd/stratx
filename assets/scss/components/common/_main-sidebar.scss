@@ -1,0 +1,244 @@
+.main-sidebar {
+  &-widget {
+    padding: 44px 46px;
+    margin-bottom: 60px;
+    border-radius: 20px;
+    border-left: 3px solid $theme-color;
+    background: $white;
+    box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+
+    @include breakpoint(max-xxl) {
+      padding: 44px 20px;
+    }
+
+    &.style1 {
+      padding: 27px 32px 28px;
+      @include breakpoint(max-xxl) {
+        padding: 44px 14px 28px;
+      }
+    }
+
+    &__heading {
+      margin-bottom: 16px;
+
+      &-title {
+        color: $title-color;
+        font-family: $title-font;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 41.76px;
+        letter-spacing: -0.72px;
+        @include breakpoint(max-xxsmall) {
+          font-size: 28px;
+          line-height: 36px;
+          }
+      }
+    }
+
+    &__search-widget {
+      form {
+        width: 100%;
+        position: relative;
+
+        input {
+          padding: 12px 33px;
+          width: 100%;
+          color: $text-color;
+          font-family: $body-font;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 32px;
+          border-radius: 999px;
+          border: none;
+          background: $bg-color;
+        }
+
+        button {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 70px;
+          height: 100%;
+          color: $white;
+          text-align: center;
+          transition: all .3s ease-in-out;
+        }
+      }
+    }
+
+    &__post {
+      &-items {
+        @include flex;
+        gap: 22px;
+        padding: 20px 0px;
+        @include breakpoint(max-xxsmall) {
+          gap: 10px;
+        }
+        &-thumb {
+          max-width: 100%;
+        }
+
+        &-content {
+          ul {
+            margin-bottom: 6px;
+
+            li {
+              color: $text-color;
+              font-family: $body-font;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 28px;
+
+              i {
+                color: $title-color;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-right: 10px;
+              }
+            }
+          }
+
+          &-title {
+            a {
+              color: $title-color;
+              font-family: $title-font;
+              font-size: 22px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 30px;
+              letter-spacing: -0.64px;
+              @include breakpoint(max-xxl) {
+                font-size: 20px;
+              }
+              @include breakpoint(max-xxsmall) {
+                font-size: 18px;
+                line-height: 14px;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__categories {
+      ul {
+        margin-top: 33px;
+
+        li {
+          @include flex;
+          justify-content: space-between;
+          padding: 17px 30px;
+          background-color: $white;
+          font-weight: 500;
+          @include transition;
+          border-radius: 999px;
+          border: 1px solid $border-color;
+          background: $white;
+          margin-top: 34px;
+
+          a {
+            color: $text-color;
+            font-family: $body-font;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px;
+
+            @include breakpoint(max-xxsmall) {
+              font-size: 16px;
+              line-height: 28px;
+            }
+
+          }
+
+          span {
+            color: $text-color;
+            font-family: $body-font;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px;
+          }
+        }
+      }
+    }
+
+    &__categories1 {
+      &-tagcloud {
+        margin-top: 35px;
+
+        a {
+          display: inline-flex;
+          padding: 6px 9px;
+          justify-content: center;
+          align-items: center;
+          margin-right: 2px;
+          border-radius: 999px;
+          border: 1px solid $gray-color-1;
+          background: $white;
+          margin-bottom: 20px;
+
+          color: $text-color;
+          font-family: $body-font;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 22px;
+
+          &:hover {
+            background-color: $theme-color;
+            color: $white !important;
+          }
+        }
+
+      }
+    }
+
+    &__social {
+      @include flex;
+      gap: 19px;
+      margin: 30px 0px 25px 0px;
+
+      &-icon {
+        width: 37px;
+        height: 37px;
+        line-height: 37px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: $bg-color;
+        color: $white;
+
+        a {
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+
+          i {
+            color: $title-color;
+            font-size: 16px;
+          }
+        }
+
+      }
+
+      &__content {
+        &-title {
+          color: $title-color;
+          font-family: $title-font;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 30px;
+          letter-spacing: -0.64px;
+        }
+      }
+    }
+
+  }
+}

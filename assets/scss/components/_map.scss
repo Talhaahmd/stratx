@@ -1,0 +1,15 @@
+.map-section{
+  &__map-items{
+    &-googpemap{
+      filter: grayscale(100%) invert(7%) contrast(83%);
+      iframe {
+        width: 100%;
+        height:548px;
+        margin-bottom: -9px;
+        @include breakpoint (max-sm){
+            height: 400px;
+        }
+    }
+    }
+  }
+}

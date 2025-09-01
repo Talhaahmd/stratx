@@ -1,0 +1,109 @@
+
+.testimonial1 {
+    &-card {
+        padding: 20px;
+        margin: 20px 30px;
+        border-radius: 20px;
+        border: 1px solid $border-color;
+        
+        @include breakpoint(max-xxsmall) {
+            margin: 0;
+        }
+        &-header {
+            &__name {
+                color: $title-color; 
+                font-family: $title-font;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 40px;  
+                letter-spacing: -0.64px; 
+                margin-bottom: 15px;
+                
+            @include breakpoint(max-xl) {
+                font-size: 28px;
+                line-height: 34px;
+                margin-bottom: 8px;
+            }
+            }
+
+            &__designation {
+                color: $text-color; 
+                font-family: $body-font;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 32px;  
+                
+            @include breakpoint(max-xl) {
+                font-size: 16px;
+                line-height: 28px;
+            }
+            }
+        }
+
+        &__desc {
+            color: $text-color; 
+            font-family: $body-font;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 42px;  
+            margin-top: 20px;
+            margin-bottom: 30px;
+            
+            @include breakpoint(max-xl) {
+                font-size: 20px;
+                line-height: 28px;
+            }
+
+            
+            @include breakpoint(max-xxsmall) {
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+
+        &-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &__quote-icon {
+
+            }
+        }
+    }
+}
+
+.testimonialSlider1 {  
+    .swiper-slide { 
+       &.swiper-slide-prev {
+        margin-top: 60px; 
+        position: relative; 
+        &:before {
+            position: absolute;
+            content: '';
+            border-radius: 20px;
+            background: linear-gradient(274deg, rgba(255, 255, 255, 0.00) 6.47%, rgba(255, 255, 255, 0.98) 61.34%);
+            bottom: 0;
+            left: 0;
+            width: 630px;
+            height: 380px; 
+        } 
+       }
+       &.swiper-slide-next {
+        margin-top: 60px;
+        position: relative; 
+        &:before {
+            position: absolute;
+            content: '';
+            border-radius: 20px;
+            background: linear-gradient(95deg, rgba(255, 255, 255, 0.00) 12.49%, rgba(255, 255, 255, 0.96) 61.51%);
+            bottom: 0;
+            right: 0;
+            width: 630px;
+            height: 380px; 
+        } 
+       }
+    }
+}

@@ -1,0 +1,17 @@
+.partner2{
+    background-color: $white;
+    padding: 80px 0;
+    &-logo-slider1{
+        margin-bottom: 20px;
+        &__item{
+            text-align: center;  
+          }
+    }
+    &-logo-slider2__item{
+        text-align: center;
+    }
+
+    &.about-bg{
+        background-color: $bg-color;
+    }
+}
