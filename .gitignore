@@ -1,0 +1,8 @@
+# Node modules
+node_modules/
+
+# Vercel config
+.vercel/
+
+# Env files
+.env
