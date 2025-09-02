@@ -1,8 +1,5 @@
-# Node modules
 node_modules/
-
-# Vercel config
-.vercel/
-
-# Env files
+.vercel
 .env
+.env.local
+*.log
