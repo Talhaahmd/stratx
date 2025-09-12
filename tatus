@@ -1,0 +1,5 @@
+[33m01ba052[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Update StratX website with comprehensive improvements
+[33mf5d086c[m Update about.html and contact.html
+[33mcb6be32[m fix: Add vercel.json and update deployment configuration
+[33m4aefbc1[m Add .gitignore to ignore node_modules and env files
+[33m109769c[m Trigger redeploy
