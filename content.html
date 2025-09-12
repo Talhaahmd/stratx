@@ -84,59 +84,33 @@
         <i class="fa-solid fa-chevron-up"></i>
     </button>
 
-    <!-- Mobilemenu    S T A R T -->
-    <div class="global-menu-wrapper onepage-nav">
-        <div class="global-menu-area text-center">
-            <button class="global-menu-toggle"><i class="fal fa-times"></i></button>
-            <div class="mobile-logo">
-                <a href='#'>
-                    <img src="assets/images/logo/white-logo.png" alt="Ezenci">
-                </a>
-            </div>
-            <nav class="global-mobile-menu">
-                <ul>
-                    <li class="menu-item-has-children">
-                        <a href='#'>Home</a>
-                        <ul class="sub-menu">
-                            <li><a href='index.html'>Home One</a></li>
-                            <li><a href='index2.html'>Home Two</a></li>
-                            <li><a href='index3.html'>Home Three</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a class="active" href='#'> Services </a>
-                        <ul class="sub-menu">
-                            <li><a href='services.html'>Services</a></li>
-                            <li><a class="active" href='service-details.html'>Service Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a href='#'> Projects </a>
-                        <ul class="sub-menu">
-                            <li><a href='project.html'>Projects</a></li>
-                            <li><a href='project-details.html'>Projects Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a href='#'> Blog </a>
-                        <ul class="sub-menu">
-                            <li><a href='blog.html'>Blog</a></li>
-                            <li><a href='blog-details.html'>Blog Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a href='#'> Pages </a>
-                        <ul class="sub-menu">
-                            <li><a href='project.html'>Projects</a></li>
-                            <li><a href='project-details.html'>Project Details</a></li>
-                            <li><a href='about.html'>About</a></li>
-                        </ul>
-                    </li>
-                    <li><a href='contact.html'>Contact</a></li>
-                </ul>
-            </nav>
+    <!-- ===================== MOBILE DRAWER ===================== -->
+    <div id="mobileDrawer" class="global-menu-wrapper onepage-nav" aria-hidden="true">
+      <div class="global-menu-area text-center">
+        <!-- Close -->
+        <button class="global-menu-toggle close-btn" aria-label="Close menu"><i class="fal fa-times"></i></button>
+
+        <!-- Mobile Logo -->
+        <div class="mobile-logo">
+          <a href="index.html" aria-label="StratX">
+            <img src="https://i.postimg.cc/y6cgjKN5/freepik-background-52814.png" alt="StratX">
+          </a>
         </div>
+
+        <!-- Mobile Menu -->
+        <nav class="global-mobile-menu" aria-label="Mobile">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
+    <!-- ===================== MOBILE DRAWER END ===================== -->
 <!-- Header Section    S T A R T -->
 <header class="global-header1 header-layout1">
   <div class="sticky-wrapper">
@@ -147,7 +121,7 @@
           <div class="col-auto">
             <div class="header-logo">
               <a href="index.html">
-                <img src="" alt="StratX">
+                <img src="https://i.postimg.cc/y6cgjKN5/freepik-background-52814.png" alt="StratX">
               </a>
             </div>
           </div>
@@ -183,7 +157,7 @@
           <div class="col-auto d-none d-xxl-block">
             <div class="global-header1-social-button">
               <ul class="global-header1-social-button__list">
-                <li><a href="#!"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.instagram.com/stratx_ai/"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href="#!"><i class="fa-brands fa-linkedin-in"></i></a></li>
                 <!-- Removed Twitter & Facebook -->
               </ul>
@@ -254,15 +228,7 @@
       </div>
 
       <!-- Sidebar Services -->
-      <div class="service-details-items wow fadeInUp" data-wow-delay="0.4s">
-        <h3 class="service-details-items__title">Services</h3>
-        <ul class="service-details-items__list">
-          <li><a href="ads.html">Ad Campaigns &amp; Performance Marketing</a> <span>01</span></li>
-          <li><a href="website.html">Smart Websites &amp; SEO Content</a> <span>02</span></li>
-          <li><a href="marketing.html">AI Marketing &amp; Automation</a> <span>03</span></li>
-          <li><a href="content.html">Content, Design &amp; Social Media</a> <span>04</span></li>
-        </ul>
-      </div>
+     
 
       <!-- Main description -->
       <div class="service-details1-info wow fadeInUp" data-wow-delay="0.6s">
@@ -377,7 +343,7 @@
                            </p>
                     </div>
                     <div class="col-lg-5">
-                        <a href="index.html"><img src="assets/images/logo/big-logo.png" alt="Logo"></a>
+                        <a href="index.html"><img src="https://i.postimg.cc/y6cgjKN5/freepik-background-52814.png" alt="Logo"></a>
                     </div>
                 </div>
             </div>
