@@ -2,6 +2,19 @@
 (function ($) {
   "use strict";
 
+  // Load navbar injector after mobile menu function is defined
+  if (typeof window.navbarInjectorLoaded === 'undefined') {
+    var script = document.createElement('script');
+    script.src = 'assets/js/navbar-injector.js';
+    script.onload = function() {
+      window.navbarInjectorLoaded = true;
+    };
+    // Load after a short delay to ensure etmobilemenu is defined
+    setTimeout(function() {
+      document.head.appendChild(script);
+    }, 100);
+  }
+
   $(document).ready(function () {
 
 

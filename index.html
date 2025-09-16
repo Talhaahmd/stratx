@@ -95,7 +95,7 @@
           <div class="col-auto">
             <div class="header-logo">
               <a href="index.html" aria-label="StratX">
-                <img src="https://i.postimg.cc/pdmRxy2q/freepik-background-52814.png" alt="StratX">
+                <img src="imgs/freepik__background__37259.png" alt="StratX">
               </a>
             </div>
           </div>
@@ -109,10 +109,10 @@
                 <li class="menu-item-has-children">
                   <a href="services.html">Services</a>
                   <ul class="sub-menu">
-                    <li><a href="ads.html">Ad Campaigns and Performance Marketing</a></li>
-                    <li><a href="website.html">Website and Store Development</a></li>
-                    <li><a href="marketing.html">AI Marketing and Automations</a></li>
-                    <li><a href="content.html">Content, Design, and Social Media Management</a></li>
+                    <li><a href="marketing.html">AI Marketing Automation</a></li>
+                    <li><a href="ads.html">Ad Campaigns</a></li>
+                    <li><a href="website.html">Websites & SEO</a></li>
+                    <li><a href="content.html">Offline Marketing</a></li>
                   </ul>
                 </li>
 
@@ -169,7 +169,7 @@
 
     <div class="mobile-logo">
         <a href="index.html">
-          <img src="https://i.postimg.cc/pdmRxy2q/freepik-background-52814.png" alt="StratX">
+          <img src="imgs/freepik__background__37259.png" alt="StratX">
       </a>
     </div>
 
@@ -184,10 +184,10 @@
           <li class="menu-item-has-children">
             <a href="services.html">Services</a>
             <ul class="sub-menu">
-              <li><a href="marketing.html">AI Marketing</a></li>
+              <li><a href="marketing.html">AI Marketing Automation</a></li>
               <li><a href="ads.html">Ad Campaigns</a></li>
+              <li><a href="website.html">Websites & SEO</a></li>
               <li><a href="content.html">Offline Marketing</a></li>
-              <li><a href="website.html">Website Development</a></li>
         </ul>
           </li>
   
@@ -221,7 +221,7 @@
   --txt:#fff;
 }
 .global-header1{position:relative; z-index:10; background:#0d0f15; border-bottom:1px solid var(--line)}
-.header-logo img{height:34px}
+.header-logo img{height:50px}
 .global-header1-menu-area-main-menu > ul{display:flex; gap:22px; margin:0; padding:0; list-style:none}
 .global-header1-menu-area-main-menu a{display:inline-flex; padding:10px 8px; border-radius:0}
 .global-header1-menu-area-main-menu a:hover,
@@ -283,7 +283,7 @@
 }
 
 .global-menu-wrapper .mobile-logo img {
-  height: 32px !important;
+  height: auto !important;
 }
 
 .global-menu-wrapper .global-menu-toggle {
@@ -878,6 +878,79 @@ window.addEventListener('scroll', function(){
 // Init continuous marquee for partners
 // No JS needed for brand marquee; CSS keyframes handle continuous scroll
 
+// FS-Agency V2 Section Animations
+document.addEventListener('DOMContentLoaded', function() {
+  // Intersection Observer for scroll-triggered animations
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        
+        // Trigger staggered animations for features
+        const features = entry.target.querySelectorAll('.fs2-feature');
+        features.forEach((feature, index) => {
+          setTimeout(() => {
+            feature.style.opacity = '1';
+            feature.style.transform = 'translateY(0)';
+          }, index * 150);
+        });
+      }
+    });
+  }, observerOptions);
+
+  // Observe the fs-agency section
+  const fsAgencySection = document.querySelector('.fs-agency.v2');
+  if (fsAgencySection) {
+    observer.observe(fsAgencySection);
+  }
+
+  // Enhanced hover effects for features
+  const features = document.querySelectorAll('.fs2-feature');
+  features.forEach(feature => {
+    feature.addEventListener('mouseenter', function() {
+      // Add ripple effect
+      const ripple = document.createElement('div');
+      ripple.style.cssText = `
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(255, 122, 0, 0.1);
+        transform: scale(0);
+        animation: ripple 0.6s linear;
+        pointer-events: none;
+        top: 50%;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin-left: -50px;
+        margin-top: -50px;
+      `;
+      
+      this.appendChild(ripple);
+      
+      setTimeout(() => {
+        ripple.remove();
+      }, 600);
+    });
+  });
+
+  // Add CSS for ripple animation
+  const style = document.createElement('style');
+  style.textContent = `
+    @keyframes ripple {
+      to {
+        transform: scale(4);
+        opacity: 0;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+});
+
 </script>
 
    
@@ -905,8 +978,7 @@ window.addEventListener('scroll', function(){
       <div class="row">
         <div class="col-12">
           <div class="intro1-wrapper-content">
-            <h1 class="intro1-wrapper-content__title wow fadeInUp" data-wow-delay=".3s">
-              StratX<i class="fa-solid fa-arrow-up-right"></i> <br>
+            <h1 class="intro1-wrapper-content__title wow fadeInUp" data-wow-delay=".3s"><i class="fa-solid fa-arrow-up-right"></i> <br>
               <span class="intro1-wrapper-content__subtitle">The AI <br>Marketing</span> <br> Studio
             </h1>
             <p class="intro1-wrapper-content__text wow fadeInUp" data-wow-delay=".5s">
@@ -973,8 +1045,8 @@ window.addEventListener('scroll', function(){
     <div class="fs2-grid">
       <!-- Left: kicker + bright serif headline -->
       <header class="fs2-left">
-        <p class="fs2-kicker">REVENUE-DRIVEN MARKETING</p>
-        <h1 class="fs2-title">
+        <p class="fs2-kicker wow fadeInUp" data-wow-delay="0.2s">REVENUE-DRIVEN MARKETING</p>
+        <h1 class="fs2-title wow fadeInUp" data-wow-delay="0.4s">
           Full-Service<br>
           Digital<br>
           Marketing<br>
@@ -987,7 +1059,7 @@ window.addEventListener('scroll', function(){
         <div class="fs2-features">
 
           <!-- Feature 1 -->
-          <a href="marketing.html" class="fs2-feature">
+          <a href="marketing.html" class="fs2-feature wow fadeInUp" data-wow-delay="0.6s">
             <span class="fs2-ico" aria-hidden="true">
               <!-- frame icon -->
               <svg viewBox="0 0 24 24" fill="none">
@@ -1002,7 +1074,7 @@ window.addEventListener('scroll', function(){
           </a>
 
           <!-- Feature 2 -->
-          <a href="ads.html" class="fs2-feature">
+          <a href="ads.html" class="fs2-feature wow fadeInUp" data-wow-delay="0.8s">
             <span class="fs2-ico" aria-hidden="true">
               <!-- funnel icon -->
               <svg viewBox="0 0 24 24" fill="none">
@@ -1016,7 +1088,7 @@ window.addEventListener('scroll', function(){
           </a>
 
           <!-- Feature 3 -->
-          <a href="website.html" class="fs2-feature">
+          <a href="website.html" class="fs2-feature wow fadeInUp" data-wow-delay="1.0s">
             <span class="fs2-ico" aria-hidden="true">
               <!-- layout icon -->
               <svg viewBox="0 0 24 24" fill="none">
@@ -1032,7 +1104,7 @@ window.addEventListener('scroll', function(){
           </a>
 
           <!-- Feature 4 -->
-          <a href="content.html" class="fs2-feature">
+          <a href="content.html" class="fs2-feature wow fadeInUp" data-wow-delay="1.2s">
             <span class="fs2-ico" aria-hidden="true">
               <!-- AI orbit icon -->
               <svg viewBox="0 0 24 24" fill="none">
@@ -1142,6 +1214,255 @@ window.addEventListener('scroll', function(){
     margin: 0;
     font: 400 clamp(14px, 1.05vw, 16px)/1.8 "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     color: var(--fs2-muted);
+  }
+
+  /* ===== ANIMATIONS & INTERACTIONS ===== */
+  
+  /* Feature card hover animations */
+  .fs2-feature{
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .fs2-feature::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 122, 0, 0.05) 0%, rgba(138, 165, 255, 0.05) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    border-radius: 12px;
+    z-index: -1;
+  }
+  
+  .fs2-feature:hover::before{
+    opacity: 1;
+  }
+  
+  .fs2-feature:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  .fs2-feature:hover .fs2-ico{
+    transform: scale(1.1) rotate(5deg);
+    color: #ff7a00;
+  }
+  
+  .fs2-feature:hover h3{
+    color: #ff7a00;
+    transform: translateX(4px);
+  }
+  
+  .fs2-feature:hover p{
+    color: var(--fs2-text);
+  }
+
+  /* Icon animations */
+  .fs2-ico{
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+  }
+  
+  .fs2-ico svg{
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /* Text animations */
+  .fs2-feature h3{
+    transition: all 0.3s ease;
+  }
+  
+  .fs2-feature p{
+    transition: all 0.3s ease;
+  }
+
+  /* Kicker animation */
+  .fs2-kicker{
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .fs2-kicker::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(138, 165, 255, 0.3), transparent);
+    transition: left 0.6s ease;
+  }
+  
+  .fs2-kicker:hover::after{
+    left: 100%;
+  }
+
+  /* Title animation */
+  .fs2-title{
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .fs2-title::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    animation: titleShimmer 3s ease-in-out infinite;
+  }
+  
+  @keyframes titleShimmer{
+    0% { left: -100%; }
+    50% { left: 100%; }
+    100% { left: 100%; }
+  }
+
+  /* Staggered entrance animation for features */
+  .fs2-features{
+    animation: fadeInUp 0.8s ease-out;
+  }
+  
+  @keyframes fadeInUp{
+    from{
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Pulse animation for icons */
+  .fs2-ico svg{
+    animation: iconPulse 2s ease-in-out infinite;
+  }
+  
+  @keyframes iconPulse{
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+
+  /* Hover state for the entire section */
+  .fs-agency.v2:hover .fs2-ico svg{
+    animation-play-state: paused;
+  }
+
+  /* Advanced scroll-triggered animations */
+  .fs-agency.v2{
+    position: relative;
+  }
+  
+  .fs-agency.v2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(138, 165, 255, 0.03) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    pointer-events: none;
+  }
+  
+  .fs-agency.v2.in-view::before{
+    opacity: 1;
+  }
+
+  /* Individual feature entrance animations */
+  .fs2-feature:nth-child(1) { animation-delay: 0.1s; }
+  .fs2-feature:nth-child(2) { animation-delay: 0.2s; }
+  .fs2-feature:nth-child(3) { animation-delay: 0.3s; }
+  .fs2-feature:nth-child(4) { animation-delay: 0.4s; }
+
+  /* Icon rotation on hover */
+  .fs2-feature:hover .fs2-ico svg{
+    animation: iconRotate 0.6s ease-in-out;
+  }
+  
+  @keyframes iconRotate{
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(1.1); }
+    100% { transform: rotate(360deg) scale(1); }
+  }
+
+  /* Text reveal animation */
+  .fs2-feature h3,
+  .fs2-feature p{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: textReveal 0.6s ease-out forwards;
+  }
+  
+  .fs2-feature h3{
+    animation-delay: 0.2s;
+  }
+  
+  .fs2-feature p{
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes textReveal{
+    to{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Background gradient animation */
+  .fs-agency.v2{
+    background: linear-gradient(135deg, #111215 0%, #0f1220 50%, #111215 100%);
+    background-size: 200% 200%;
+    animation: backgroundShift 8s ease-in-out infinite;
+  }
+  
+  @keyframes backgroundShift{
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  /* Mobile optimizations for animations */
+  @media (max-width: 768px) {
+    .fs2-feature:hover{
+      transform: translateY(-4px);
+    }
+    
+    .fs2-feature:hover .fs2-ico{
+      transform: scale(1.05) rotate(2deg);
+    }
+    
+    .fs2-ico svg{
+      animation-duration: 3s;
+    }
+  }
+
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    .fs2-ico svg,
+    .fs-agency.v2,
+    .fs2-title::before{
+      animation: none;
+    }
+    
+    .fs2-feature{
+      transition: none;
+    }
+    
+    .fs2-feature:hover{
+      transform: none;
+    }
   }
 
   /* ===== Responsive ===== */
@@ -1338,8 +1659,8 @@ window.addEventListener('scroll', function(){
         </h2>
 
         <p class="sf-paragraph">
-          <strong>Our company’s excellent reputation</strong> is built on our clients’ success and
-          our peers’ respect. It is no surprise then that we hire only the best and brightest talent
+          <strong>Our company's excellent reputation</strong> is built on our clients' success and
+          our peers' respect. It is no surprise then that we hire only the best and brightest talent
           with experience in metrics that make a difference.
         </p>
 
@@ -1581,7 +1902,7 @@ window.addEventListener('scroll', function(){
                                     <div class="project1-wrapper-info-items1">
                                         <div class="project1-wrapper-info-items1__thumb img-custom-anim-left wow fadeInleft"
                                             data-wow-delay=".5s">
-                                            <img src="https://res.cloudinary.com/dt93sahp2/image/upload/v1756602881/Untitled_design_7_uajfgs.png" alt="thumb">
+                                            <img src="imgs/Untitled design (18).png" alt="thumb">
                                             <div class="project1-wrapper-info-items1__thumb-icon">
                                                 <a href="project.html"><img
                                                         src="assets/images/projects/p-arrow.svg" alt="arrow"></a>
@@ -1631,35 +1952,35 @@ window.addEventListener('scroll', function(){
       <div class="col-12">
         <div class="brand-marquee" aria-hidden="false">
           <div class="brand-track">
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/yY5DwJCY/freepik-assistant-1757684956170.png" alt="Logo 5"></a></div>
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/HsjJZwKh/freepik-assistant-1757684957153.png" alt="Logo 6"></a></div>
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/FzCYFzfp/freepik-assistant-1757684958378.png" alt="Logo 7"></a></div>
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/HW6c9ZSM/freepik-assistant-1757684959286.png" alt="Logo 8"></a></div>
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/0jy6qDNr/freepik-assistant-1757684960054.png" alt="Logo 9"></a></div>
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/9fywPcSX/freepik-assistant-1757684961574.png" alt="Logo 10"></a></div>
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/NMY9pWq6/freepik-assistant-1757684962876.png" alt="Logo 11"></a></div>
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/XJ8ZhQ4T/freepik-assistant-1757684963593.png" alt="Logo 12"></a></div>
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/kg0tt2Th/freepik-assistant-1757684965134.png" alt="Logo 13"></a></div>
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/15YFsCwS/freepik-assistant-1757684996004.png" alt="Logo 14"></a></div>
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/YCGW96zW/freepik-assistant-1757684996890.png" alt="Logo 15"></a></div>
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/ncL78bsT/freepik-assistant-1757684997706.png" alt="Logo 16"></a></div>
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/RCdfbV0N/freepik-assistant-1757684998842.png" alt="Logo 17"></a></div>
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/nr3DsTWv/freepik-assistant-1757684999687.png" alt="Logo 18"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684956170.png" alt="Partner Logo 1"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684957153.png" alt="Partner Logo 2"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684958378.png" alt="Partner Logo 3"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684959286.png" alt="Partner Logo 4"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684960054.png" alt="Partner Logo 5"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684961574.png" alt="Partner Logo 6"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684962876.png" alt="Partner Logo 7"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684963593.png" alt="Partner Logo 8"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684965134.png" alt="Partner Logo 9"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684996004.png" alt="Partner Logo 10"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684996890.png" alt="Partner Logo 11"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684997706.png" alt="Partner Logo 12"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684999687.png" alt="Partner Logo 13"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684954577.png" alt="Partner Logo 14"></a></div>
             <!-- duplicate for seamless loop -->
-           <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/yY5DwJCY/freepik-assistant-1757684956170.png" alt="Logo 5"></a></div>
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/HsjJZwKh/freepik-assistant-1757684957153.png" alt="Logo 6"></a></div>
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/FzCYFzfp/freepik-assistant-1757684958378.png" alt="Logo 7"></a></div>
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/HW6c9ZSM/freepik-assistant-1757684959286.png" alt="Logo 8"></a></div>
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/0jy6qDNr/freepik-assistant-1757684960054.png" alt="Logo 9"></a></div>
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/9fywPcSX/freepik-assistant-1757684961574.png" alt="Logo 10"></a></div>
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/NMY9pWq6/freepik-assistant-1757684962876.png" alt="Logo 11"></a></div>
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/XJ8ZhQ4T/freepik-assistant-1757684963593.png" alt="Logo 12"></a></div>
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/kg0tt2Th/freepik-assistant-1757684965134.png" alt="Logo 13"></a></div>
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/15YFsCwS/freepik-assistant-1757684996004.png" alt="Logo 14"></a></div>
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/YCGW96zW/freepik-assistant-1757684996890.png" alt="Logo 15"></a></div>
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/ncL78bsT/freepik-assistant-1757684997706.png" alt="Logo 16"></a></div>
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/RCdfbV0N/freepik-assistant-1757684998842.png" alt="Logo 17"></a></div>
-            <div class="partner2-logo-slider1__item"><a href="#!"><img src="https://i.postimg.cc/nr3DsTWv/freepik-assistant-1757684999687.png" alt="Logo 18"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684956170.png" alt="Partner Logo 1"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684957153.png" alt="Partner Logo 2"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684958378.png" alt="Partner Logo 3"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684959286.png" alt="Partner Logo 4"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684960054.png" alt="Partner Logo 5"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684961574.png" alt="Partner Logo 6"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684962876.png" alt="Partner Logo 7"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684963593.png" alt="Partner Logo 8"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684965134.png" alt="Partner Logo 9"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684996004.png" alt="Partner Logo 10"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684996890.png" alt="Partner Logo 11"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684997706.png" alt="Partner Logo 12"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684999687.png" alt="Partner Logo 13"></a></div>
+            <div class="partner2-logo-slider1__item"><a href="#!"><img src="imgs/freepik_assistant_1757684954577.png" alt="Partner Logo 14"></a></div>
               </div>
             </div>
       </div>
@@ -1669,10 +1990,10 @@ window.addEventListener('scroll', function(){
 <style>
   /* Mobile optimized logo sizing */
   .partner2-logo-slider1__item img {
-    transform: scale(1.2);
+    transform: scale(0.8);
     transform-origin: center center;
     transition: transform 0.3s ease;
-    max-width: 120px;
+    max-width: 80px;
     height: auto;
   }
 
@@ -1686,12 +2007,12 @@ window.addEventListener('scroll', function(){
 
   @media (max-width: 768px) {
     .partner2-logo-slider1__item img {
-      transform: scale(1);
-      max-width: 100px;
+      transform: scale(0.7);
+      max-width: 60px;
     }
     
-    .swiper-slide { padding:6px; }
-    .brand-track{ animation-duration: 15s; gap:60px; }
+    .swiper-slide { padding:4px; }
+    .brand-track{ animation-duration: 15s; gap:40px; }
   }
 </style>
 
@@ -1753,7 +2074,8 @@ window.addEventListener('scroll', function(){
                     <div class="col-xl-4">
                         <div class="contact1-wrapper-items">
                             <div class="contact1-wrapper-items__thumb  wow fadeInRight" data-wow-delay=".4s">
-                                <img src="https://res.cloudinary.com/dt93sahp2/image/upload/v1756603144/Untitled_design_9_qdxhif.png" alt="thumb">
+                              <img src="imgs/office-desktop-with-laptop-business-man.jpg" alt="Contact">
+      
                             </div>
                             
                         </div>
@@ -1776,7 +2098,7 @@ window.addEventListener('scroll', function(){
                            </p>
                     </div>
                     <div class="col-lg-5">
-                        <a href="index.html"><img src="https://i.postimg.cc/pdmRxy2q/freepik-background-52814.png" alt="Logo"></a>
+                        <a href="index.html"><img src="imgs/freepik__background__37259.png" alt="Logo"></a>
                     </div>
                 </div>
             </div>
