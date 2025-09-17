@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--=========== Meta Tags ==========-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="namespaceit">
+    <meta name="description" content="Ezensi - Creative Digital Agency Html Template">
+    <!--============= Page title ============ -->
+    <title>StratX - Projects</title>
+    <!--===== Favcion =====-->
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <!--===== Bootstrap min.css =====-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--===== All Min Css =====-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--===== Animate.css =====-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--===== MeanMenu.css =====-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--===== Swiper Bundle.css =====-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--===== Magnific Popup.css =====-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--===== Text Splitting.css =====-->
+    <link rel="stylesheet" href="assets/css/splitting.css">
+    <!--===== Main.css =====-->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <!--===== Preloader Start =====-->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="txt-loading">
+                <span data-text-preloader="E" class="letters-loading">
+                    S
+                </span>
+                <span data-text-preloader="G" class="letters-loading">
+                    T
+                </span>
+                <span data-text-preloader="E" class="letters-loading">
+                    R
+                </span>
+                <span data-text-preloader="N" class="letters-loading">
+                    A
+                </span>
+                <span data-text-preloader="S" class="letters-loading">
+                    T
+                </span>
+                <span data-text-preloader="I" class="letters-loading">
+                    X
+                </span>
+            </div>
+            <p class="text-center">Loading</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--===== Mouse Cursor Start =====-->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
+    <!--===== Back To Top Start =====-->
+    <button id="back-top" class="back-to-top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- Mobilemenu    S T A R T -->
+    <div class="global-menu-wrapper onepage-nav">
+        <div class="global-menu-area text-center">
+            <button class="global-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href='index.html'>
+                    <img src="imgs/freepik__background__37259.png" alt="StratX">
+                </a>
+            </div>
+            <nav class="global-mobile-menu">
+                <ul>
+                    <li><a href='index.html'>Home</a></li>
+                    <li class="menu-item-has-children">
+                        <a href='#'>Services</a>
+                        <ul class="sub-menu">
+                            <li><a href='ads.html'>Ad Campaigns and Performance Marketing</a></li>
+                            <li><a href='website.html'>Website and Store Development</a></li>
+                            <li><a href='marketing.html'>AI Marketing and Automations</a></li>
+                            <li><a href='content.html'>Content, Design, and Social Media Management</a></li>
+                        </ul>
+                    </li>
+                    <li><a href='project.html'>Projects</a></li>
+                    <li><a href='about.html'>About StratX</a></li>
+                    <li><a href='contact.html'>Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+<!-- header will be injected by navbar-injector.js -->
+
+
+    <!--===== Breadcrumb Section    S T A R T =====-->
+    <div class="breadcrumb-wrapper bg-color2">
+        <div class="container">
+            <div class="breadcrumb-wrapper-page-heading">
+                <h1 class="breadcrumb-wrapper-page-heading__title wow fadeInUp" data-wow-delay=".3s">Project Details
+                </h1>
+                <ul class="breadcrumb-wrapper-page-heading__breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-slash-forward"></i>
+                    </li>
+                    <li>
+                        Project Details
+                    </li>
+                </ul>
+                <div class="breadcrumb-wrapper-page-heading__text">
+                    Project_Details
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--===== Breadcrumb Section    E N D =====-->
+
+
+ <!--===== Project Details Section    S T A R T =====-->
+<section class="project-details section-padding fix">
+    <div class="container">
+        <div class="project-details-wrapper">
+            <div class="project-details-wrapper-header">
+                <h2 class="project-details-wrapper-header__title wow fadeInUp" data-wow-delay="0.3s">
+                    Prime Appliances – Building a Stronger Digital Presence
+                </h2>
+                <div class="project-details-wrapper-header-left">
+                    <div class="project-details-wrapper-header-left-items wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="project-details-wrapper-header-left-items__content">
+                            <h4 class="project-details-wrapper-header-left-items__content-title">Client</h4>
+                            <p class="project-details-wrapper-header-left-items__content-text">Prime Appliances</p>
+                        </div>
+                        <div class="project-details-wrapper-header-left-items__content">
+                            <h4 class="project-details-wrapper-header-left-items__content-title">Location</h4>
+                            <p class="project-details-wrapper-header-left-items__content-text">Manchester, United Kingdom</p>
+                        </div>
+                    </div>
+                    <div class="project-details-wrapper-header-left-items wow fadeInUp" data-wow-delay="0.6s">
+                       
+                        <div class="project-details-wrapper-header-left-items__content">
+                            <h4 class="project-details-wrapper-header-left-items__content-title">Timeline</h4>
+                            <p class="project-details-wrapper-header-left-items__content-text">3 Months</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-details-wrapper-info">
+                <div class="project-details-wrapper-info__thumb img-custom-anim-left">
+                    <img src="https://i.postimg.cc/Dzy8GdyH/freepik-the-style-is-candid-image-photography-with-natural-57069.png" alt="thumb">
+                </div>
+                <div class="project-details-wrapper-info__content wow fadeInUp" data-wow-delay="0.3s">
+                    <p class="project-details-wrapper-info__content-text">
+                        Prime Appliances wanted to create a stronger online identity to showcase their products and
+                        engage with modern buyers. Their existing presence was limited, and they needed a sleek,
+                        functional platform to compete effectively in the appliance retail market.
+                    </p>
+                    <p class="project-details-wrapper-info__content-subtext">
+                        Our team designed a responsive eCommerce-ready website that highlighted their product range 
+                        while integrating simple navigation and product-focused visuals. In addition, we crafted a 
+                        digital marketing strategy including SEO, product promotions, and social media branding to 
+                        build visibility and trust with customers.
+                    </p>
+                </div>
+                <div class="project-details-wrapper-info__thumb1 img-custom-anim-left wow" data-wow-delay="0.3s">
+                    <img src="https://i.postimg.cc/DwcSmYF1/freepik-the-style-is-candid-image-photography-with-natural-57070.png" alt="thumb">
+                </div>
+            </div>
+
+            <div class="project-details-wrapper-footer">
+                <h2 class="project-details-wrapper-footer__title fadeInUp wow" data-wow-delay="0.3s">
+                    A Modern Storefront for a Modern Brand
+                </h2>
+                <p class="project-details-wrapper-footer__text fadeInUp wow" data-wow-delay="0.4s">
+                    The transformation gave Prime Appliances a competitive edge in the digital space. The new website, 
+                    combined with optimized campaigns, improved customer engagement and positioned them as a reliable 
+                    retailer for household appliances.
+                </p>
+                <div class="project-details-wrapper-footer-area wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="project-details-wrapper-footer-area__items1">
+                        <ul class="project-details-wrapper-footer-area__items1-sublist">
+                            <li><i class="fa-solid fa-circle-check"></i> Responsive Website Development</li>
+                            <li><i class="fa-solid fa-circle-check"></i> E-Commerce Ready Framework</li>
+                            <li><i class="fa-solid fa-circle-check"></i> SEO Optimization</li>
+                        </ul>
+                    </div>
+                    <div class="project-details-wrapper-footer-area__items1">
+                        <ul class="project-details-wrapper-footer-area__items1-sublist">
+                            <li><i class="fa-solid fa-circle-check"></i> Social Media Branding</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Increased Product Visibility</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Improved Customer Engagement</li>
+                        </ul>
+                    </div>
+                    <div class="project-details-wrapper-footer-area__items1">
+                        <ul class="project-details-wrapper-footer-area__items1-sublist">
+                            <li><i class="fa-solid fa-circle-check"></i> 3-Month Delivery Timeline</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Stronger Online Identity</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Competitive Advantage</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-details-wrapper-footer-desc wow fadeInUp" data-wow-delay="0.3s">
+                    <h4 class="project-details-wrapper-footer-desc__title">Laying the Foundation for Growth</h4>
+                    <p class="project-details-wrapper-footer-desc__text">
+                        With a modern storefront and a consistent brand strategy, Prime Appliances is now positioned 
+                        to expand its customer base. The digital foundation we built ensures scalability and long-term 
+                        growth opportunities.
+                    </p>
+                    <p class="project-details-wrapper-footer-desc__subtext">
+                        This project demonstrates how a clear vision, strong design, and digital marketing strategy can 
+                        transform traditional retailers into customer-first digital brands.
+                    </p>
+                </div>
+                <div class="project-details-wrapper-footer-button wow fadeInUp" data-wow-delay="0.3s">
+                    <a href="petsmart.html" class="project-details-wrapper-footer-button__arry-prev">
+                        <i class="fa-regular fa-angle-left"></i>
+                        <span>Previous post</span>
+                    </a>
+                    <a href="nordedge.html" class="project-details-wrapper-footer-button__arry-next">
+                        <span class="project-details-wrapper-footer-button__next">Next post</span>
+                        <i class="fa-regular fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--===== Project Details Section    E N D =====-->
+
+
+
+    <!--===== Footer Section  S T A R T =====-->
+    <section class="footer1 fix">
+        <div class="container">
+            <div class="footer1-top">
+                <div class="row align-items-center justify-content-md-between justify-content-between">
+                    <div class="col-lg-7">
+                        <h2 class="footer1-top__title">Get Started Now</h2>
+                        <p class="footer1-top__text">AI Marketing agency built to grow modern businesses<br>
+                           </p>
+                    </div>
+                    <div class="col-lg-5">
+                        <a href="index.html"><img src="imgs/freepik__background__37259.png" alt="Logo"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-xxl-auto col-xl-5 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                    <div class="footer1-widget__item style1">
+                        <div class="footer1-widget__item-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="footer1-widget__item-contact">
+                            <h6 class="footer1-widget__item-contact-title">Address</h6>
+                            <a class="footer1-widget__item-contact-link" href="contact">GTA, Canada</a>
+                        </div>
+                    </div>
+                    <div class="footer1-widget__item style1">
+                        <div class="footer1-widget__item-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="footer1-widget__item-contact">
+                            <h6 class="footer1-widget__item-contact-title">Email</h6>
+                            <a class="footer1-widget__item-contact-link"
+                                href="mailto:sara.cruz@example.com">info@stratxio.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-auto col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                    <div class="footer1-widget__item ">
+                        <ul class="footer1-widget__item-list">
+                            <li><a href="about.html"><span><img class="svg" src="assets/images/icon/angles-right2.svg"
+                                            alt="svg"></span> About Us</a></li>
+                            <li><a href="services.html"><span><img class="svg"
+                                            src="assets/images/icon/angles-right2.svg" alt="svg"></span> Services</a>
+                            </li>
+                            <li><a href="#"><span><img class="svg" src="assets/images/icon/angles-right2.svg"
+                                            alt="svg"></span> Why Chose Us</a></li>
+                            <li><a href="#"><span><img class="svg" src="assets/images/icon/angles-right2.svg"
+                                            alt="svg"></span> Doctors</a></li>
+                            <li><a href="blog.html"><span><img class="svg" src="assets/images/icon/angles-right2.svg"
+                                            alt="svg"></span> Blog And News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-8 col-md-12 wow fadeInUp" data-wow-delay=".2s">
+                    <div class="footer1-widget__item ps40 last-item">
+                        <div class="footer1-widget__item-input">
+                            <input class="form-control" type="email" placeholder="Enter your E-mail">
+                            <button class="theme-btn style1" type="submit">Subscribe Now <svg
+                                    xmlns="http://www.w3.org/2000/svg" width="71" height="40" viewBox="0 0 71 40"
+                                    fill="none">
+                                    <path
+                                        d="M55.7071 20.7071C56.0976 20.3166 56.0976 19.6834 55.7071 19.2929L49.3431 12.9289C48.9526 12.5384 48.3195 12.5384 47.9289 12.9289C47.5384 13.3195 47.5384 13.9526 47.9289 14.3431L53.5858 20L47.9289 25.6568C47.5384 26.0474 47.5384 26.6805 47.9289 27.0711C48.3195 27.4616 48.9526 27.4616 49.3431 27.0711L55.7071 20.7071ZM8.74228e-08 21L55 21L55 19L-8.74228e-08 19L8.74228e-08 21Z"
+                                        fill="white" />
+                                    <circle cx="51" cy="20" r="19.5" stroke="#E44F39" />
+                                </svg></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer1-bottom">
+                <div class="container">
+                    <div class="footer1-bottom-item d-flex align-items-center justify-content-between">
+                        <p class="footer1-bottom-item__text">
+                            © <a href="index.html">StratX</a> 2025 | All Rights Reserved
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--===== All JS Plugins =====-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--===== Bootstrap Js =====-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--===== Waypoints Js =====-->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!--===== Counterup Js =====-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--===== Viewport Js =====-->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!--===== Tilt Js =====-->
+    <script src="assets/js/tilt.min.js"></script>
+    <!--===== Splitting Animation Js =====-->
+    <script src="assets/js/splitting.js"></script>
+    <!--===== Swiper Slider Js =====-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--===== Magnific Js =====-->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!--===== MeanMenu Js =====-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--===== Wow Animation Js =====-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--===== Main.js =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--=========== Meta Tags ==========-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="namespaceit">
+    <meta name="description" content="Ezensi - Creative Digital Agency Html Template">
+    <!--============= Page title ============ -->
+    <title>Ezensi - Creative Digital Agency Html Template</title>
+    <!--===== Favcion =====-->
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <!--===== Bootstrap min.css =====-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--===== All Min Css =====-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--===== Animate.css =====-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--===== MeanMenu.css =====-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--===== Swiper Bundle.css =====-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--===== Magnific Popup.css =====-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--===== Text Splitting.css =====-->
+    <link rel="stylesheet" href="assets/css/splitting.css">
+    <!--===== Main.css =====-->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <!--===== Preloader Start =====-->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="txt-loading">
+                <span data-text-preloader="E" class="letters-loading">
+                    S
+                </span>
+                <span data-text-preloader="G" class="letters-loading">
+                    T
+                </span>
+                <span data-text-preloader="E" class="letters-loading">
+                    R
+                </span>
+                <span data-text-preloader="N" class="letters-loading">
+                    A
+                </span>
+                <span data-text-preloader="S" class="letters-loading">
+                    T
+                </span>
+                <span data-text-preloader="I" class="letters-loading">
+                    X
+                </span>
+            </div>
+            <p class="text-center">Loading</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--===== Mouse Cursor Start =====-->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
+    <!--===== Back To Top Start =====-->
+    <button id="back-top" class="back-to-top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- ===================== MOBILE DRAWER ===================== -->
+    <div id="mobileDrawer" class="global-menu-wrapper onepage-nav" aria-hidden="true">
+      <div class="global-menu-area text-center">
+        <!-- Close -->
+        <button class="global-menu-toggle close-btn" aria-label="Close menu"><i class="fal fa-times"></i></button>
+
+        <!-- Mobile Logo -->
+        <div class="mobile-logo">
+          <a href="index.html" aria-label="StratX">
+            <img src="imgs/freepik__background__37259.png" alt="StratX">
+          </a>
+        </div>
+
+        <!-- Mobile Menu -->
+        <nav class="global-mobile-menu" aria-label="Mobile">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- ===================== MOBILE DRAWER END ===================== -->
+<!-- header will be injected by navbar-injector.js -->
+
+    <!--===== Breadcrumb Section    S T A R T =====-->
+    <div class="breadcrumb-wrapper bg-color2">
+        <div class="container">
+            <div class="breadcrumb-wrapper-page-heading">
+                <h1 class="breadcrumb-wrapper-page-heading__title wow fadeInUp" data-wow-delay=".3s">Services Details
+                </h1>
+                <ul class="breadcrumb-wrapper-page-heading__breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-slash-forward"></i>
+                    </li>
+                    <li>
+                        Service Details
+                    </li>
+                </ul>
+                <div class="breadcrumb-wrapper-page-heading__text">
+                    Service_Details
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--===== Breadcrumb Section    E N D =====-->
+
+
+ 
+   <!--===== Service Details Section    S T A R T =====-->
+<section class="service-details section-padding fix">
+  <div class="container">
+    <div class="service-details-wrapper">
+
+      <!-- Intro -->
+      <div class="service-details__content">
+        <h2 class="service-details__content-title wow fadeInUp" data-wow-delay="0.3s">
+          AI Marketing &amp; Automation
+        </h2>
+        <p class="service-details__content-text">
+          Automate outreach, qualify leads, and accelerate sales with integrated AI workflows.
+        </p>
+      </div>
+
+      <!-- Sidebar Services -->
+     
+
+      <!-- Main description -->
+      <div class="service-details1-info wow fadeInUp" data-wow-delay="0.6s">
+        <div class="service-details-info__thumb">
+          <img src="imgs/overworked-workaholic-entrepreneur-woman-shwoing-marketing-graphs-using-tablet-overworking-company-solution-late-night-meeting-room.webp" alt="AI Marketing & Automation">
+        </div>
+        <div class="service-details-info__contact">
+          <p class="service-details-info__contact-text">
+            We leverage AI-powered workflows to optimize lead generation and customer engagement. From automated CRM
+            processes to 24/7 customer support bots, your business can scale faster while reducing manual effort.
+          </p>
+          <p class="service-details-info__contact-subtext">
+            By combining personalization with automation, we ensure your outreach feels human while delivering the speed
+            and accuracy of advanced AI systems.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature Cards -->
+      <div class="service-details-cards">
+        <div class="service1-card wow fadeInUp" data-wow-delay="0.3s">
+          <a href="marketing.html">
+            <h3 class="service1-card__title">CRM Workflows &amp; Lead Scoring</h3>
+          </a>
+          <p class="service1-card__desc">
+            Automate data entry, qualify leads faster, and prioritize high-value prospects with AI-powered scoring.
+          </p>
+          <ul class="checklist">
+            <li class="checklist__item"><i class="fa-solid fa-plus"></i> Automated CRM processes</li>
+            <li class="checklist__item"><i class="fa-solid fa-plus"></i> Lead scoring &amp; prioritization</li>
+          </ul>
+        </div>
+
+        <div class="service1-card wow fadeInUp" data-wow-delay="0.5s">
+          <a href="marketing.html">
+            <h3 class="service1-card__title">24/7 AI Chatbots</h3>
+          </a>
+          <p class="service1-card__desc">
+            Engage visitors instantly with intelligent chatbots that answer questions, qualify leads, and book meetings.
+          </p>
+          <ul class="checklist">
+            <li class="checklist__item"><i class="fa-solid fa-plus"></i> Always-on customer support</li>
+            <li class="checklist__item"><i class="fa-solid fa-plus"></i> Seamless integration with your site</li>
+          </ul>
+        </div>
+
+        <div class="service1-card wow fadeInUp" data-wow-delay="0.7s">
+          <a href="marketing.html">
+            <h3 class="service1-card__title">Personalized Outreach</h3>
+          </a>
+          <p class="service1-card__desc">
+            Create AI-driven email and SMS campaigns that adapt to customer behavior and intent signals.
+          </p>
+          <ul class="checklist">
+            <li class="checklist__item"><i class="fa-solid fa-plus"></i> Email/SMS personalization</li>
+            <li class="checklist__item"><i class="fa-solid fa-plus"></i> Intent-based outreach campaigns</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Highlights -->
+      <div class="service-details-area">
+        <h3 class="service-details-area__title wow fadeInUp" data-wow-delay="0.3s">
+          Why Choose AI-Powered Marketing?
+        </h3>
+        <p class="service-details-area__text wow fadeInUp" data-wow-delay="0.5s">
+          Automation allows your team to focus on strategy while AI handles repetitive tasks. This improves speed,
+          consistency, and scalability across all campaigns—without losing personalization.
+        </p>
+
+        <div class="service-details-area-list1">
+          <div class="service-details-area-list1__items1 wow fadeInUp" data-wow-delay="0.3s">
+            <ul class="service-details-area-list1__items1-sublist">
+              <li><i class="fa-solid fa-circle-check"></i> CRM workflows &amp; lead scoring</li>
+              <li><i class="fa-solid fa-circle-check"></i> 24/7 AI chatbots</li>
+            </ul>
+          </div>
+          <div class="service-details-area-list1__items1 wow fadeInUp" data-wow-delay="0.5s">
+            <ul class="service-details-area-list1__items1-sublist">
+              <li><i class="fa-solid fa-circle-check"></i> Email/SMS personalization</li>
+              <li><i class="fa-solid fa-circle-check"></i> Intent-based outreach</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="service-details-area__subtext wow fadeInUp" data-wow-delay="0.3s">
+          Automate outreach, qualify leads, and accelerate sales with integrated AI workflows.
+        </p>
+
+         <!-- Prev/Next buttons -->
+        <div class="service-details-area-button wow fadeInUp" data-wow-delay="0.5s">
+          <a href="ads.html" class="service-details-area-button__arry-prev">
+            <i class="fa-regular fa-angle-left"></i>
+            <span>Previous</span>
+          </a>
+          <a href="marketing.html" class="service-details-area-button__arry-next">
+            <span class="service-details-area-button__next">Next</span>
+            <i class="fa-regular fa-angle-right"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--===== Service Details Section    E N D =====-->
+
+
+   <!--===== Footer Section  S T A R T =====-->
+    <section class="footer1 fix">
+        <div class="container">
+            <div class="footer1-top">
+                <div class="row align-items-center justify-content-md-between justify-content-between">
+                    <div class="col-lg-7">
+                        <h2 class="footer1-top__title">Get Started Now</h2>
+                        <p class="footer1-top__text">AI Marketing agency built to grow modern businesses<br>
+                           </p>
+                    </div>
+                    <div class="col-lg-5">
+                        <a href="index.html"><img src="imgs/freepik__background__37259.png" alt="Logo"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-xxl-auto col-xl-5 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                    <div class="footer1-widget__item style1">
+                        <div class="footer1-widget__item-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="footer1-widget__item-contact">
+                            <h6 class="footer1-widget__item-contact-title">Address</h6>
+                            <a class="footer1-widget__item-contact-link" href="contact">GTA, Canada</a>
+                        </div>
+                    </div>
+                    <div class="footer1-widget__item style1">
+                        <div class="footer1-widget__item-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="footer1-widget__item-contact">
+                            <h6 class="footer1-widget__item-contact-title">Email</h6>
+                            <a class="footer1-widget__item-contact-link"
+                                href="mailto:sara.cruz@example.com">info@stratxio.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-auto col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                    <div class="footer1-widget__item ">
+                        <ul class="footer1-widget__item-list">
+                            <li><a href="about.html"><span><img class="svg" src="assets/images/icon/angles-right2.svg"
+                                            alt="svg"></span> About Us</a></li>
+                            <li><a href="services.html"><span><img class="svg"
+                                            src="assets/images/icon/angles-right2.svg" alt="svg"></span> Services</a>
+                            </li>
+                           <li>
+  <a href="project.html">
+    <span>
+      <img class="svg" src="assets/images/icon/angles-right2.svg" alt="svg">
+    </span> 
+    Portfolio
+  </a>
+</li>
+
+                          
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-8 col-md-12 wow fadeInUp" data-wow-delay=".2s">
+                    <div class="footer1-widget__item ps40 last-item">
+                        <div class="footer1-widget__item-input">
+                            <input class="form-control" type="email" placeholder="Enter your E-mail">
+                            <button class="theme-btn style1" type="submit">Subscribe Now <svg
+                                    xmlns="http://www.w3.org/2000/svg" width="71" height="40" viewBox="0 0 71 40"
+                                    fill="none">
+                                    <path
+                                        d="M55.7071 20.7071C56.0976 20.3166 56.0976 19.6834 55.7071 19.2929L49.3431 12.9289C48.9526 12.5384 48.3195 12.5384 47.9289 12.9289C47.5384 13.3195 47.5384 13.9526 47.9289 14.3431L53.5858 20L47.9289 25.6568C47.5384 26.0474 47.5384 26.6805 47.9289 27.0711C48.3195 27.4616 48.9526 27.4616 49.3431 27.0711L55.7071 20.7071ZM8.74228e-08 21L55 21L55 19L-8.74228e-08 19L8.74228e-08 21Z"
+                                        fill="white" />
+                                    <circle cx="51" cy="20" r="19.5" stroke="#E44F39" />
+                                </svg></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer1-bottom">
+                <div class="container">
+                    <div class="footer1-bottom-item d-flex align-items-center justify-content-between">
+                        <p class="footer1-bottom-item__text">
+                            © <a href="index.html">StratX</a> 2025 | All Rights Reserved
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--===== All JS Plugins =====-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--===== Bootstrap Js =====-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--===== Waypoints Js =====-->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!--===== Counterup Js =====-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--===== Viewport Js =====-->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!--===== Tilt Js =====-->
+    <script src="assets/js/tilt.min.js"></script>
+    <!--===== Splitting Animation Js =====-->
+    <script src="assets/js/splitting.js"></script>
+    <!--===== Swiper Slider Js =====-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--===== Magnific Js =====-->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!--===== MeanMenu Js =====-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--===== Wow Animation Js =====-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--===== Main.js =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
