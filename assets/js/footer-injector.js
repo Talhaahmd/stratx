@@ -21,7 +21,7 @@
                     <h2 class="footer1-top__title">Get Started Now</h2>
                     <p class="footer1-top__text">AI Marketing agency built to grow modern businesses<br>
                        </p>
-                    <a class="footer1-top__logo" href="index.html"><img src="imgs/freepik__background__37259.png" alt="StratX Logo"></a>
+                    <a class="footer1-top__logo" href="index.html"><img src="https://res.cloudinary.com/dt93sahp2/image/upload/v1758200763/freepik__background__37259_icowwt.png" alt="StratX Logo"></a>
                 </div>
             </div>
         </div>

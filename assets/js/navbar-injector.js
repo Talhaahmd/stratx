@@ -22,7 +22,7 @@
           <div class="col-auto">
             <div class="header-logo">
               <a href="index.html" aria-label="StratX">
-                <img src="imgs/freepik__background__37259.png" alt="StratX">
+                <img src="https://res.cloudinary.com/dt93sahp2/image/upload/v1758200763/freepik__background__37259_icowwt.png" alt="StratX">
               </a>
             </div>
           </div>
@@ -96,7 +96,7 @@
 
     <div class="mobile-logo">
         <a href="index.html">
-          <img src="imgs/freepik__background__37259.png" alt="StratX">
+          <img src="https://res.cloudinary.com/dt93sahp2/image/upload/v1758200763/freepik__background__37259_icowwt.png" alt="StratX">
       </a>
     </div>
 
