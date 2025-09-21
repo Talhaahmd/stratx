@@ -59,7 +59,7 @@
           </div>
 
           <!-- Desktop Social -->
-          <div class="col-auto d-none d-xxl-block">
+          <div class="col-auto d-none d-xl-block">
             <div class="global-header1-social-button">
               <ul class="global-header1-social-button__list">
                 <li><a href="https://www.instagram.com/stratx_ai/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
@@ -133,6 +133,18 @@
             <a href="contact.html">Contact</a>
           </li>
         </ul>
+        
+        <!-- Mobile Social Links -->
+        <div class="mobile-social-links" style="margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--line);">
+          <div style="display: flex; justify-content: center; gap: 20px;">
+            <a href="https://www.instagram.com/stratx_ai/" aria-label="Instagram" style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background: rgba(255,255,255,0.1); border: 1px solid var(--line); border-radius: 10px; color: #fff; text-decoration: none; transition: all 0.3s ease;">
+              <i class="fa-brands fa-instagram" style="font-size: 20px;"></i>
+            </a>
+            <a href="#!" aria-label="LinkedIn" style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background: rgba(255,255,255,0.1); border: 1px solid var(--line); border-radius: 10px; color: #fff; text-decoration: none; transition: all 0.3s ease;">
+              <i class="fa-brands fa-linkedin-in" style="font-size: 20px;"></i>
+            </a>
+          </div>
+        </div>
     </nav>
   </div>
 </div>
@@ -402,6 +414,16 @@
   }
 }
 
+/* Mobile Social Links Styles */
+.mobile-social-links a:hover {
+  background: rgba(255,255,255,0.2) !important;
+  transform: translateY(-2px) !important;
+}
+
+.mobile-social-links a:hover i {
+  color: #ff7a00 !important;
+}
+
 /* Breakpoints */
 @media (min-width:1200px){
   .global-header1-menu-area-main-menu{display:block !important}
@@ -447,7 +469,7 @@
     function initializeMobileMenu() {
         // Wait for the etmobilemenu function to be available
         let attempts = 0;
-        const maxAttempts = 50; // 5 seconds max wait
+        const maxAttempts = 100; // 10 seconds max wait
         
         function tryInitialize() {
             attempts++;
@@ -456,11 +478,23 @@
                 // Initialize mobile menu for the injected navbar
                 $(".global-menu-wrapper").etmobilemenu();
                 console.log('✅ Mobile menu functionality initialized');
+                
+                // Also re-initialize any existing mobile menus
+                if (typeof window.initializeExistingMobileMenus === 'function') {
+                    window.initializeExistingMobileMenus();
+                }
             } else if (attempts < maxAttempts) {
                 // Try again in 100ms
                 setTimeout(tryInitialize, 100);
             } else {
                 console.warn('⚠️ etmobilemenu function not found after waiting, mobile menu may not work');
+                // Fallback: try to initialize anyway after a longer delay
+                setTimeout(function() {
+                    if (typeof $.fn.etmobilemenu === 'function') {
+                        $(".global-menu-wrapper").etmobilemenu();
+                        console.log('✅ Mobile menu functionality initialized (fallback)');
+                    }
+                }, 2000);
             }
         }
         
@@ -510,9 +544,20 @@
         setTimeout(function() {
             const mobileWrapper = $('.global-menu-wrapper');
             const toggleButtons = $('.global-menu-toggle');
+            const socialLinks = $('.mobile-social-links');
             console.log('🔍 Debug - Mobile wrapper found:', mobileWrapper.length);
             console.log('🔍 Debug - Toggle buttons found:', toggleButtons.length);
+            console.log('🔍 Debug - Social links found:', socialLinks.length);
             console.log('🔍 Debug - etmobilemenu function available:', typeof $.fn.etmobilemenu);
+            
+            // Check if Instagram button exists
+            const instagramBtn = $('.mobile-social-links a[href*="instagram"]');
+            console.log('🔍 Debug - Instagram button found:', instagramBtn.length);
+            if (instagramBtn.length > 0) {
+                console.log('✅ Instagram button is present in mobile menu');
+            } else {
+                console.log('❌ Instagram button NOT found in mobile menu');
+            }
         }, 1000);
         
         console.log('✅ Navbar injected successfully from index.html');
